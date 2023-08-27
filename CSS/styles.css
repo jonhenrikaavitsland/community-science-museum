@@ -8,16 +8,17 @@ Table of Contents
 3.  Hamburger
 4.  Typography
 5.  CTA
-6.  Forms
-7.  Header
-8.  Footer
-9.  Index
-10. Explore
-11. Exhibition Spaces
-12. Visit Us
-13. Get Involved
-14. Contact Us
-15. @media
+6.  Color
+7.  Forms
+8.  Header
+9.  Footer
+10.  Index
+11. Explore
+12. Exhibition Spaces
+13. Visit Us
+14. Get Involved
+15. Contact Us
+16. @media
 
 */
 
@@ -108,7 +109,120 @@ main {
 
 
 /*
+=============
+3.  Hamburger
+=============
+*/
 
 
 
+/*
+==============
+4.  Typography
+==============
+*/
+
+
+
+/*
+=======
+5.  CTA
+=======
+*/
+
+
+
+/*
+=========
+6.  Color
+=========
+*/
+
+a,
+.white-txt {
+  color: var(--white-100);
+}
+
+
+/*
+=========
+7.  Forms
+=========
+*/
+
+
+
+/*
+==========
+8.  Header
+==========
+*/
+
+header {
+  background-color: var(--black-100);
+}
+
+
+/*
+==========
+9.  Footer
+==========
+*/
+
+
+
+/*
+=========
+10.  Index
+=========
+*/
+
+
+
+/*
+===========
+11. Explore
+===========
+*/
+
+
+
+/*
+=====================
+12. Exhibition Spaces
+=====================
+*/
+
+
+
+/*
+============
+13. Visit Us
+============
+*/
+
+
+
+
+
+/*
+================
+14. Get Involved
+================
+*/
+
+
+
+/*
+==============
+15. Contact Us
+==============
+*/
+
+
+
+/*
+==========
+16. @media
+==========
 */
