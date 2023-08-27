@@ -112,6 +112,34 @@ nav,
   display: none;
 }
 
+.hero-txt,
+.prof-wrap,
+.night-wrap,
+.energetica-wrap,
+.museum-ad,
+.exhibitions-ad,
+.kids-club-ad,
+.school-ad {
+  border-radius: 15px;
+}
+
+.prof-wrap img,
+.night-wrap img,
+.energetica-wrap img,
+.exhibitions-ad img,
+.kids-club-ad img,
+.school-ad img {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.prof-wrap section,
+.night-wrap section,
+.energetica-wrap section,
+.exhibitions-ad section,
+.kids-club-ad section,
+.school-ad section{
+  padding: 0 10px 45px 10px;
+}
 
 /*
 =============
@@ -422,17 +450,6 @@ margin-top: 10px;
   gap: 20px;
 }
 
-.hero-txt,
-.prof-wrap,
-.night-wrap,
-.energetica-wrap,
-.museum-ad,
-.exhibitions-ad,
-.kids-club-ad,
-.school-ad {
-  border-radius: 15px;
-}
-
 .hero-txt {
   padding: 45px 10px;
 }
@@ -445,24 +462,6 @@ margin-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.prof-wrap section,
-.night-wrap section,
-.energetica-wrap section,
-.exhibitions-ad section,
-.kids-club-ad section,
-.school-ad section{
-  padding: 0 10px 45px 10px;
-}
-
-.prof-wrap img,
-.night-wrap img,
-.energetica-wrap img,
-.exhibitions-ad img,
-.kids-club-ad img,
-.school-ad img {
-  border-radius: 15px 15px 0px 0px;
 }
 
 .museum-ad img {
@@ -500,11 +499,15 @@ margin-top: 10px;
 }
 
 .museum-ad h3 {
-  bottom: 96px;
+  bottom: 20%;
 }
 
 .museum-ad div {
-  bottom: 45px;
+  bottom: 10%;
+}
+
+.museum-2 {
+  display: none;
 }
 
 .exhibitions-ad section h3 {
@@ -513,6 +516,10 @@ margin-top: 10px;
 
 .exhibitions-ad section {
   margin-bottom: 6px;
+}
+
+.exhib-2 {
+  display: none;
 }
 
 .school-ad p {
@@ -576,6 +583,79 @@ margin-top: 10px;
 ==========
 */
 
+/* ////////// 600PX \\\\\\\\\\*/
+@media (min-width: 601px) {
+  /* Global styles */
+  .prof-wrap section,
+  .night-wrap section,
+  .energetica-wrap section,
+  .exhibitions-ad section,
+  .kids-club-ad section,
+  .school-ad section{
+    padding: 0 20px 60px 20px;
+  }
+
+  .exhibitions-ad img {
+    border-radius: 15px 0 0 15px;
+  }
+
+  /* CTA */
+  .energetica-wrap section div,
+  .cta-visit-wrap {
+    display: flex;
+    margin-top: 40px;
+}
+
+  /* Index */
+  .hero-txt {
+    padding: 60px 20px;
+  }
+
+  .exhib-1,
+  .museum-1 {
+    display: none;
+  }
+
+  .exhib-2,
+  .museum-2 {
+    display: block;
+  }
+
+  .exhibitions-ad {
+    display: flex;
+  }
+
+  .exhibitions-ad :nth-child(1) {
+    flex: 1;
+  }
+
+  .exhibitions-ad :nth-child(2) {
+    flex: 1;
+  }
+
+  .exhibitions-ad section {
+    position: relative;
+  }
+
+  .exhibitions-ad section h3 {
+    position: absolute;
+    top: 20%;
+  }
+
+  .exhibitions-ad section a {
+    position: absolute;
+    left: 39%;
+    bottom: 20%;
+  }
+
+  .prof-wrap h2 {
+    margin: 60px 0 17px 0;
+  }
+
+}
+
+
+/* ////////// 1100PX \\\\\\\\\\ */
 @media (min-width: 1100px) {
   nav {
     display: block;
