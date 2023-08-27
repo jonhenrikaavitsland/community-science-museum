@@ -14,12 +14,15 @@
 <body>
 
 <header>
-  <a href="#"><img src="Assets/logo-white.png" alt="Image of our logo in white color"></a>
-  <p class="white-txt">My Community Science Museum</p>
-  <p class="white-txt">Explore together</p>
-  <i class="fa-solid fa-bars white-txt"></i>
+  <div class="logo-wrap">
+    <a href="#"><img src="Assets/logo-white.png" alt="Image of our logo in white color" class="logo"></a>
+    <p class="white-txt logo-name-1">My Community Science Museum</p>
+    <p class="white-txt slogan">Explore together</p>
+  </div>
+  <input type="checkbox" id="menu-checkbox">
+  <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
   <nav>
-    <a href="#">Home</a>
+    <a href="#" class="active-page">Home</a>
     <a href="explore.html">Explore</a>
     <a href="exhibitions.html">Exhibition Spaces</a>
     <a href="visit.html">Visit Us</a>
@@ -129,9 +132,9 @@
     <a href="contact.html">Contact us</a>
   </div>
   <img src="Assets/logo-white.png" alt="Image of our logo in white color">
-  <div>
+  <div class="copy-wrap">
     <i class="fa-solid fa-copyright"></i>
-    <p>My Community Science Museum</p>
+    <p class="logo-name-2">My Community Science Museum</p>
   </div>
 </footer>
   

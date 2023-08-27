@@ -105,6 +105,12 @@ body {
 
 main {
   flex: 1;
+  margin: 0 10px;
+}
+
+nav,
+#menu-checkbox {
+  display: none;
 }
 
 
@@ -114,6 +120,32 @@ main {
 =============
 */
 
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  background: var(--black-100);
+  top: 200px;
+  right: 0px;
+}
+
+.hamburger-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px
+}
+
 
 
 /*
@@ -122,6 +154,26 @@ main {
 ==============
 */
 
+.logo-name-1,
+.logo-name-2 {
+  font-family: var(--font-lucky);
+}
+
+.slogan,
+nav {
+  font-family: var(--font-michroma);
+}
+
+.fa-bars,
+.logo-name-1 {
+  font-size: var(--size-21);
+}
+
+.logo-name-1,
+.logo-name-2,
+.slogan {
+  text-align: center;
+}
 
 
 /*
@@ -139,8 +191,15 @@ main {
 */
 
 a,
-.white-txt {
+.logo-name-1,
+.logo-name-2,
+.slogan,
+.fa-bars {
   color: var(--white-100);
+}
+
+.active-page {
+  color: var(--yellow-700);
 }
 
 
@@ -160,7 +219,31 @@ a,
 
 header {
   background-color: var(--black-100);
+  height: 200px;
 }
+
+.logo {
+  width: 88px;
+  height: 100px;
+  margin: 22px 0 3px 0;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-wrap {
+  position: relative;
+}
+
+.slogan {
+  position: absolute;
+  bottom: -17px;
+}
+
+
 
 
 /*
@@ -169,6 +252,11 @@ header {
 ==========
 */
 
+.copy-wrap {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
 
 
 /*
@@ -226,3 +314,18 @@ header {
 16. @media
 ==========
 */
+
+@media (min-width: 1100px) {
+  nav {
+    display: block;
+    position: static;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  nav a {
+    display: inline-block
+  }
+}
