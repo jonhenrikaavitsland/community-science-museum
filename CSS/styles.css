@@ -624,12 +624,8 @@ margin-top: 10px;
   .exhibitions-ad {
     display: flex;
   }
-
+  .exhibitions-ad :nth-child(2),
   .exhibitions-ad :nth-child(1) {
-    flex: 1;
-  }
-
-  .exhibitions-ad :nth-child(2) {
     flex: 1;
   }
 
