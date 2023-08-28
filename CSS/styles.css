@@ -97,9 +97,13 @@ body {
   font-family: var(--font-gruppo);
   font-size: var(--size-21);
   margin: 0 auto;
-  max-width: 1500px;
   display: flex;
   flex-direction: column;
+}
+
+.main-container {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 main {
@@ -119,7 +123,8 @@ nav,
 .museum-ad,
 .exhibitions-ad,
 .kids-club-ad,
-.school-ad {
+.school-ad,
+.museum-ad img {
   border-radius: 15px;
 }
 
@@ -162,9 +167,9 @@ header {
 
 nav {
   position: absolute;
-  background: var(--black-100);
   top: 200px;
   right: 0px;
+  z-index: 1000;
 }
 
 .hamburger-icon {
@@ -209,7 +214,7 @@ h3,
 }
 
 .slogan,
-.night-wrap p,
+.night-wrap section :nth-child(3),
 .cta,
 .kids-club-ad p {
   font-size: var(--size-16);
@@ -237,7 +242,8 @@ h2,
 .energetica-wrap section :nth-child(3),
 .exhibitions-ad section,
 .kids-club-ad,
-.school-ad {
+.school-ad ,
+.night-wrap section :nth-child(2) {
   text-align: center;
 }
 
@@ -315,7 +321,8 @@ header,
 footer,
 .night-wrap,
 .exhibitions-ad,
-.kids-club-ad {
+.kids-club-ad,
+nav {
   background: var(--black-100);
 }
 
@@ -464,12 +471,7 @@ margin-top: 10px;
   gap: 30px;
 }
 
-.museum-ad img {
-  border-radius: 15px;
-}
-
 .prof-wrap h2,
-.night-wrap h2,
 .kids-club-ad h3 {
   margin: 35px 0 17px 0;
 }
@@ -478,10 +480,12 @@ margin-top: 10px;
   margin-bottom: 36px;
 }
 
+.night-wrap h2,
 .energetica-wrap h2 {
   margin-top: 35px;
 }
 
+.night-wrap section :nth-child(2),
 .energetica-wrap section :nth-child(3) {
   margin-bottom: 17px;
 }
@@ -599,6 +603,10 @@ margin-top: 10px;
     border-radius: 15px 0 0 15px;
   }
 
+  main {
+    margin: 20px 20px;
+  }
+
   /* CTA */
   .energetica-wrap section div,
   .cta-visit-wrap {
@@ -607,6 +615,20 @@ margin-top: 10px;
 }
 
   /* Index */
+  .main-container {
+    grid-template-rows: repeat(7, min-content);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .energetica-wrap,
+  .night-wrap,
+  .prof-wrap,
+  .exhibitions-ad,
+  .hero-txt,
+  .museum-ad {
+    grid-column: 1 / -1;
+  }
+
   .hero-txt {
     padding: 60px 20px;
   }
@@ -648,11 +670,47 @@ margin-top: 10px;
     margin: 60px 0 17px 0;
   }
 
+  .night-wrap {
+    display: flex;
+  }
+
+  .night-wrap :nth-child(1),
+  .night-wrap :nth-child(2) {
+    flex: 1;
+  }
+
+  .night-wrap section {
+    display: grid;
+    grid-template-rows: 1fr min-content 2fr;
+    justify-items: center;
+  }
+
+  .night-wrap h2 {
+    align-self: end;
+  }
+
+  .school-ad {
+    background-color: var(--black-100);
+  }
+  .school-ad,
+  .school-ad h3 {
+    color: var(--white-100);
+  }
+
+  .school-ad section {
+    padding-top: 100px;
+  }
 }
 
 
 /* ////////// 1100PX \\\\\\\\\\ */
 @media (min-width: 1100px) {
+  /* Global styles */  
+  main {
+    margin: 30px 30px;
+  }
+
+  /* Hamburger Menu / Navigation */
   nav {
     display: block;
     position: static;
