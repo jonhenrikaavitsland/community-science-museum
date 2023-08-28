@@ -433,6 +433,7 @@ margin-top: 10px;
   justify-content: center;
 }
 
+.logo-ftr-2,
 .logo-ftr {
   width: 88px;
   height: 100px;
@@ -444,6 +445,9 @@ margin-top: 10px;
   gap: 7px;
 }
 
+.logo-ftr-2 {
+  display: none;
+}
 
 /*
 =========
@@ -699,6 +703,26 @@ margin-top: 10px;
 
   .school-ad section {
     padding-top: 100px;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--white-400);
+  }
+
+  .ftr-link,
+  .logo-name-2,
+  .fa-copyright,
+  .fa-brands {
+    color: var(--black-100);
+  }
+
+  .logo-ftr {
+    display: none;
+  }
+
+  .logo-ftr-2 {
+    display: block;
   }
 }
 
