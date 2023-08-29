@@ -116,35 +116,32 @@ nav,
   display: none;
 }
 
-.hero-txt,
-.prof-wrap,
-.night-wrap,
-.energetica-wrap,
+.exhibitions-ad-mobile img,
+.exhibition-ad-desktop img {
+  border-radius: 15px 15px 0 0;
+}
+
+.exhibition-ad-tablet img {
+  border-radius: 15px 0 0 15px;
+}
+
 .museum-ad,
-.exhibitions-ad,
-.kids-club-ad,
-.school-ad,
-.museum-ad img {
+.hero-txt,
+.exhibitions-ad-mobile,
+.exhibition-ad-desktop {
   border-radius: 15px;
 }
 
-.prof-wrap img,
-.night-wrap img,
-.energetica-wrap img,
-.exhibitions-ad img,
-.kids-club-ad img,
-.school-ad img {
-  border-radius: 15px 15px 0px 0px;
-}
-
-.prof-wrap section,
-.night-wrap section,
-.energetica-wrap section,
-.exhibitions-ad section,
-.kids-club-ad section,
-.school-ad section{
+.exhibitions-ad-mobile section,
+.hero-txt {
   padding: 0 10px 45px 10px;
 }
+
+.exhibitions-ad-mobile section h3,
+.hero-txt h1 {
+  margin: 40px 0 20px 0;
+}
+
 
 /*
 =============
@@ -236,14 +233,11 @@ h1 {
 .socials,
 h1,
 h2,
-.prof-p,
+h3,
 .cta,
-.energetica-wrap section :nth-child(2),
-.energetica-wrap section :nth-child(3),
-.exhibitions-ad section,
-.kids-club-ad,
-.school-ad ,
-.night-wrap section :nth-child(2) {
+.museum-ad div,
+.exhibitions-ad-mobile section,
+.exhibition-ad-desktop section {
   text-align: center;
 }
 
@@ -319,29 +313,21 @@ h3,
 
 header,
 footer,
-.night-wrap,
-.exhibitions-ad,
-.kids-club-ad,
-nav {
+nav,
+.exhibitions-ad-mobile,
+.exhibition-ad-desktop {
   background: var(--black-100);
 }
 
-.hero-txt,
-.prof-wrap,
-.energetica-wrap,
-.school-ad {
+.hero-txt {
   background-color: var(--white-100);
 }
 
 .hero-txt,
-.prof-wrap,
-.night-wrap,
-.cta,
-.energetica-wrap,
 .museum-ad,
-.exhibitions-ad,
-.kids-club-ad,
-.school-ad  {
+.cta,
+.exhibitions-ad-mobile,
+.exhibition-ad-desktop {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -356,6 +342,14 @@ a,
 
 .cta {
   background: var(--linear-cta);
+}
+
+.cta-white:hover {
+  text-shadow: 0px 30px 4px var(--purple-500);
+}
+
+.cta-black:hover {
+  text-shadow: 0px 30px 4px var(--yellow-700);
 }
 
 
@@ -458,93 +452,37 @@ margin-top: 10px;
 10.  Index
 =========
 */
-
 .main-container {
   display: grid;
-  grid-template-rows: repeat(8, min-content);
+  grid-template-rows: 120vw repeat(7, min-content);
   gap: 20px;
 }
 
-.hero-txt {
-  padding: 45px 10px;
-}
-
-.hero-txt h1 {
-  margin-bottom: 23px;
-}
-
-.hero-txt div {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.prof-wrap h2,
-.kids-club-ad h3 {
-  margin: 35px 0 17px 0;
-}
-
-.prof-wrap section :nth-child(2) {
-  margin-bottom: 36px;
-}
-
-.night-wrap h2,
-.energetica-wrap h2 {
-  margin-top: 35px;
-}
-
-.night-wrap section :nth-child(2),
-.energetica-wrap section :nth-child(3) {
-  margin-bottom: 17px;
-}
-
 .museum-ad {
-  position: relative;
-  display: flex;
-  justify-content: center;
   grid-row: 1 / 2;
-}
-
-.museum-ad h3,
-.museum-ad div {
-  position: absolute;
+  background-image: url(../Assets/museum-tablet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 70% 15% 15%;
 }
 
 .museum-ad h3 {
-  bottom: 20%;
+  grid-row: 2 / 3;
+  align-self: center;
 }
 
 .museum-ad div {
-  bottom: 10%;
+  grid-row: 3 / -1;
 }
 
-.museum-2 {
+.exhibitions-ad-mobile {
+  grid-row: 3 / -1;
+}
+
+.exhibition-ad-tablet,
+.exhibition-ad-desktop {
   display: none;
-}
-
-.exhibitions-ad section h3 {
-  margin: 39px 0;
-}
-
-.exhibitions-ad section {
-  margin-bottom: 6px;
-}
-
-.exhib-3,
-.exhib-2 {
-  display: none;
-}
-
-.school-ad p {
-  margin-top: 16px;
-}
-
-.prof-wrap {
-  grid-row: 4 / 5;
-}
-
-.exhibitions-ad {
-  grid-row: 3 / 4;
 }
 
 
@@ -599,25 +537,19 @@ margin-top: 10px;
 /* ////////// 600PX \\\\\\\\\\*/
 @media (min-width: 601px) {
   /* Global styles */
-  .prof-wrap section,
-  .night-wrap section,
-  .energetica-wrap section,
-  .exhibitions-ad section,
-  .kids-club-ad section,
-  .school-ad section{
-    padding: 0 20px 60px 20px;
-  }
-
-  .exhibitions-ad img {
-    border-radius: 15px 0 0 15px;
-  }
-
   main {
     margin: 20px 20px;
   }
 
+  .exhibition-ad-tablet section {
+    padding: 0 20px;
+  }
+
+  .exhibition-ad-tablet {
+    border-radius: 15px;
+  }
+
   /* CTA */
-  .energetica-wrap section div,
   .cta-visit-wrap {
     display: flex;
     margin-top: 40px;
@@ -625,90 +557,55 @@ margin-top: 10px;
 
   /* Index */
   .main-container {
-    grid-template-rows: repeat(7, min-content);
+    grid-template-rows: 120vw repeat(6, min-content);
     grid-template-columns: 1fr 1fr;
   }
 
-  .energetica-wrap,
-  .night-wrap,
-  .prof-wrap,
-  .exhibitions-ad,
   .hero-txt,
   .museum-ad {
     grid-column: 1 / -1;
   }
 
   .hero-txt {
-    padding: 60px 20px;
+    padding: 0 20px 60px 20px;
   }
 
-  .exhib-1,
-  .museum-1 {
+  .exhibitions-ad-mobile {
     display: none;
   }
 
-  .exhib-2,
-  .museum-2 {
+  .exhibition-ad-tablet {
     display: block;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    background: var(--black-100);
   }
 
-  .exhibitions-ad {
-    display: flex;
-  }
-  .exhibitions-ad :nth-child(2),
-  .exhibitions-ad :nth-child(1) {
+  .exhibition-ad-tablet div {
     flex: 1;
   }
 
-  .exhibitions-ad section {
-    position: relative;
-  }
-
-  .exhibitions-ad section h3 {
-    position: absolute;
-    top: 20%;
-  }
-
-  .exhibitions-ad section a {
-    position: absolute;
-    left: 39%;
-    bottom: 20%;
-  }
-
-  .prof-wrap h2 {
-    margin: 60px 0 17px 0;
-  }
-
-  .night-wrap {
-    display: flex;
-  }
-
-  .night-wrap :nth-child(1),
-  .night-wrap :nth-child(2) {
+  .exhibition-ad-tablet section {
     flex: 1;
-  }
-
-  .night-wrap section {
     display: grid;
-    grid-template-rows: 1fr min-content 2fr;
-    justify-items: center;
+    grid-template-rows: 50% 50%;
+    text-align: center;
   }
 
-  .night-wrap h2 {
+  .exhibition-ad-tablet section h3 {
     align-self: end;
   }
 
-  .school-ad {
-    background-color: var(--black-100);
-  }
-  .school-ad,
-  .school-ad h3 {
-    color: var(--white-100);
+  .exhibition-ad-tablet section a {
+    align-self: start;
+    justify-self: center;
+    margin-top: 40px;
   }
 
-  .school-ad section {
-    padding-top: 100px;
-  }
+
+
 
   /* Footer */
   footer {
@@ -779,37 +676,33 @@ margin-top: 10px;
 
   .museum-ad {
     grid-column: 1 / 3;
+    background-size: 100%;
+    background-position-x: left;
+    background-position-y: center;
+    height: 800px;
   }
 
-  .exhibitions-ad {
-    grid-column: 3 / -1;
-    grid-row: 1 / 2;
-    flex-direction: column;
-  }
-
-  .exhib-3 {
-    display: block;
-  }
-
-  .exhibitions-ad section h3 {
-    top: 10%;
-    left: 18%;
-    max-width: 250px;
-  }
-
-  .exhibitions-ad section a {
-    left: 39%;
-    bottom: 25%;
-  }
-
-  .exhib-2 {
+  .exhibition-ad-tablet {
     display: none;
   }
 
-  .exhib-1 {
+  .exhibition-ad-desktop {
     display: block;
+    grid-row: 1 / 2;
+    grid-column: 3 / -1;
   }
 
+  .exhibition-ad-desktop section {
+    padding: 0 20px;
+  }
+
+  .exhibition-ad-desktop section h3 {
+    margin: 40px 0 40px 0;
+  }
+
+  .hero-txt {
+    grid-column: 2 / -1;
+  }
 
   /* Footer */
   .ftr-link:hover,
@@ -823,9 +716,5 @@ margin-top: 10px;
     margin: 0 auto;
     max-width: 1100px;
   }
-
-
-
-
 
 }
