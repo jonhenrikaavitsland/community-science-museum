@@ -159,6 +159,27 @@ nav,
   margin: 40px 0 20px 0;
 }
 
+.prof-p,
+.logo-name-1,
+.logo-name-2,
+.slogan,
+.link-wrap,
+.socials,
+h1,
+h2,
+h3,
+.cta,
+.museum-ad div,
+.exhibitions-ad-mobile section,
+.exhibition-ad-desktop section,
+.night-wrap section :nth-child(2),
+.energetica-wrap section :nth-child(2),
+.energetica-wrap section :nth-child(3),
+.kids-club-ad section div,
+.school-ad section {
+  text-align: center;
+}
+
 
 /*
 =============
@@ -243,29 +264,6 @@ h1 {
   font-size: var(--size-27);
 }
 
-.prof-p,
-.logo-name-1,
-.logo-name-2,
-.slogan,
-.link-wrap,
-.socials,
-h1,
-h2,
-h3,
-.cta,
-.museum-ad div,
-.exhibitions-ad-mobile section,
-.exhibition-ad-desktop section,
-.night-wrap section :nth-child(2),
-.energetica-wrap section :nth-child(2),
-.energetica-wrap section :nth-child(3),
-.kids-club-ad section div,
-.school-ad section {
-  text-align: center;
-}
-
-
-
 
 /*
 =======
@@ -298,12 +296,6 @@ h3,
 .energetica-wrap section div {
   justify-content: center;
 }
-
-.kids-club-ad section div,
-.school-ad section div {
-  margin-top: 30px;
-}
-
 
 
 /*
@@ -387,8 +379,6 @@ a,
 }
 
 
-
-
 /*
 =========
 7.  Forms
@@ -439,10 +429,6 @@ header div {
 ==========
 */
 
-footer {
-  
-}
-
 .socials,
 .link-wrap,
 .ftr-logo,
@@ -486,8 +472,12 @@ margin-top: 10px;
 10.  Index
 =========
 */
-.main-container {
+.main-container,
+.museum-ad {
   display: grid;
+}
+
+.main-container {
   grid-template-rows: 120vw repeat(7, min-content);
   gap: 20px;
 }
@@ -497,7 +487,6 @@ margin-top: 10px;
   background-image: url(../Assets/museum-tablet.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
   grid-template-rows: 70% 15% 15%;
 }
 
@@ -506,11 +495,8 @@ margin-top: 10px;
   align-self: center;
 }
 
+.exhibitions-ad-mobile,
 .museum-ad div {
-  grid-row: 3 / -1;
-}
-
-.exhibitions-ad-mobile {
   grid-row: 3 / -1;
 }
 
@@ -524,6 +510,11 @@ margin-top: 10px;
 .school-ad section p,
 .prof-wrap section :nth-child(3) {
   margin-top: 20px;
+}
+
+.kids-club-ad section div,
+.school-ad section div {
+  margin-top: 30px;
 }
 
 .school-ad h3,
@@ -756,18 +747,31 @@ margin-top: 10px;
   .menu-desktop {
     font-family: var(--font-michroma);
     font-size: var(--size-16);
+    }
+
+  .kids-club-ad p {
+    font-family: var(--font-gruppo);
+    font-size: var(--size-21);
   }
 
   /* Colors */
+  .fa-brands,
+  .ftr-link,
+  .fa-copyright,
+  .logo-name-2,
   .prof-wrap {
     color: var(--white-100);
   }
 
+  .kids-club-ad p,
+  .kids-club-ad h3,
   .school-ad h3,
   .school-ad section {
     color: var(--black-100);
   }
 
+  .ftr-link:hover,
+  .fa-brands:hover,
   .menu-desktop a:hover { 
     color: var(--yellow-400);
   }
@@ -776,19 +780,22 @@ margin-top: 10px;
     color: var(--yellow-700);
   }
 
-  .ftr-link:hover,
-  .fa-brands:hover {
+/* {
     color: var(--purple-500);
-  }
+  } */
 
+  .kids-club-ad,
   .school-ad {
     background: var(--white-100);
   }
 
+  .ftr-home,
   .prof-wrap {
     background: var(--black-100);
   }
 
+  .ftr-link:hover,
+  .fa-brands:hover,
   .menu-desktop a:hover { 
     text-shadow: 0px 20px 4px var(--yellow-400);
   }
@@ -797,10 +804,9 @@ margin-top: 10px;
     text-shadow: 0px 20.299999237060547px 4px var(--yellow-700);
   }
 
-  .ftr-link:hover,
-  .fa-brands:hover {
+/*{
     text-shadow: 0px 20px 4px var(--purple-500);
-  }
+  }*/
 
   /* Header */
 
@@ -817,6 +823,14 @@ margin-top: 10px;
   .socials {
     margin: 0 auto;
     max-width: 1100px;
+  }
+
+  .logo-ftr {
+    display: block;
+  }
+
+  .logo-ftr-2 {
+    display: none;
   }
 
   /* Index */
