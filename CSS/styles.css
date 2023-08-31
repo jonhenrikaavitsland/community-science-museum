@@ -119,7 +119,10 @@ nav,
 .night-wrap img,
 .prof-wrap img,
 .exhibitions-ad-mobile img,
-.exhibition-ad-desktop img {
+.exhibition-ad-desktop img,
+.energetica-wrap img,
+.kids-club-ad img,
+.school-ad img {
   border-radius: 15px 15px 0 0;
 }
 
@@ -127,25 +130,32 @@ nav,
   border-radius: 15px 0 0 15px;
 }
 
+.energetica-wrap,
 .night-wrap,
 .prof-wrap,
 .museum-ad,
 .hero-txt,
 .exhibitions-ad-mobile,
-.exhibition-ad-desktop {
+.exhibition-ad-desktop,
+.kids-club-ad,
+.school-ad {
   border-radius: 15px;
 }
 
+.kids-club-ad section,
+.energetica-wrap section,
 .night-wrap section,
 .prof-wrap section,
 .exhibitions-ad-mobile section,
-.hero-txt {
+.hero-txt,
+.school-ad section {
   padding: 0 10px 45px 10px;
 }
 
 .prof-wrap h2,
 .exhibitions-ad-mobile section h3,
-.hero-txt h1 {
+.hero-txt h1,
+.kids-club-ad h3 {
   margin: 40px 0 20px 0;
 }
 
@@ -246,7 +256,11 @@ h3,
 .museum-ad div,
 .exhibitions-ad-mobile section,
 .exhibition-ad-desktop section,
-.night-wrap section :nth-child(2) {
+.night-wrap section :nth-child(2),
+.energetica-wrap section :nth-child(2),
+.energetica-wrap section :nth-child(3),
+.kids-club-ad section div,
+.school-ad section {
   text-align: center;
 }
 
@@ -325,15 +339,20 @@ footer,
 nav,
 .exhibitions-ad-mobile,
 .exhibition-ad-desktop,
-.night-wrap {
+.night-wrap,
+.kids-club-ad {
   background: var(--black-100);
 }
 
+.energetica-wrap,
 .prof-wrap,
-.hero-txt {
+.hero-txt,
+.school-ad {
   background-color: var(--white-100);
 }
 
+.kids-club-ad,
+.energetica-wrap,
 .night-wrap,
 .prof-wrap,
 .hero-txt,
@@ -341,7 +360,8 @@ nav,
 .cta,
 .exhibitions-ad-mobile,
 .exhibition-ad-tablet,
-.exhibition-ad-desktop {
+.exhibition-ad-desktop,
+.school-ad {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -384,7 +404,7 @@ a,
 */
 
 header {
-  height: 200px;
+  padding-bottom: 30px;
 }
 
 .logo-2,
@@ -420,7 +440,7 @@ header div {
 */
 
 footer {
-  height: 300px;
+  
 }
 
 .socials,
@@ -494,22 +514,30 @@ margin-top: 10px;
   grid-row: 3 / -1;
 }
 
+.school-cta-bl,
+.kids-cta-wh,
 .exhibition-ad-tablet,
 .exhibition-ad-desktop {
   display: none;
 }
 
+.school-ad section p,
 .prof-wrap section :nth-child(3) {
   margin-top: 20px;
 }
 
+.school-ad h3,
+.energetica-wrap h2,
 .night-wrap h2 {
   margin-top: 40px;
 }
 
+.energetica-wrap section :nth-child(3),
 .night-wrap section :nth-child(2) {
   margin-bottom: 20px;
 }
+
+
 
 
 /*
@@ -567,10 +595,13 @@ margin-top: 10px;
     margin: 20px 20px;
   }
 
+  .school-ad section,
   .exhibition-ad-tablet section {
     padding: 0 20px;
   }
 
+  .kids-club-ad section,
+  .energetica-wrap section,
   .night-wrap section,
   .prof-wrap section,
   .hero-txt {
@@ -591,42 +622,93 @@ margin-top: 10px;
     margin-top: 40px;
 }
 
+  /* Colors */
+  .school-ad section,
+  .school-ad h3 {
+    color: var(--white-100);
+  }
+
+  .ftr-link,
+  .logo-name-2,
+  .fa-copyright,
+  .fa-brands {
+    color: var(--black-100);
+  }
+
+  .exhibition-ad-tablet,
+  .school-ad {
+    background: var(--black-100);
+  }
+
+  .ftr-home {
+    background-color: var(--white-400);
+  }
+
+  /* Footer */
+
+  .logo-ftr {
+    display: none;
+  }
+
+  .logo-ftr-2 {
+    display: block;
+  }
+
   /* Index */
   .main-container {
     grid-template-rows: 120vw repeat(6, min-content);
     grid-template-columns: 1fr 1fr;
   }
 
+  .exhibition-ad-tablet,
+  .energetica-wrap,
+  .night-wrap,
+  .prof-wrap,
   .hero-txt,
   .museum-ad {
     grid-column: 1 / -1;
   }
 
+  .school-cta-wh,
   .exhibitions-ad-mobile {
     display: none;
   }
 
+  .school-cta-bl,
   .exhibition-ad-tablet {
     display: block;
-    grid-row: 3 / 4;
-    grid-column: 1 / -1;
-    display: flex;
-    flex-direction: row;
-    background: var(--black-100);
   }
 
+  .night-wrap,
+  .night-wrap div,
+  .exhibition-ad-tablet,
   .exhibition-ad-tablet div {
     display: flex;
+  }
+
+  .exhibition-ad-tablet {
+    grid-row: 3 / 4;
+    flex-direction: row;
+  }
+
+  .night-wrap section,
+  .night-wrap div,
+  .exhibition-ad-tablet section,
+  .exhibition-ad-tablet div {
     flex: 1;
+  }
+
+  .night-wrap section,
+  .exhibition-ad-tablet section {
+    display: grid;
   }
 
   .exhibition-ad-tablet section {
-    flex: 1;
-    display: grid;
     grid-template-rows: 50% 50%;
     text-align: center;
   }
 
+  .night-wrap h2,
   .exhibition-ad-tablet section h3 {
     align-self: end;
   }
@@ -637,67 +719,24 @@ margin-top: 10px;
     margin-top: 40px;
   }
 
-  .prof-wrap {
-    grid-column: 1 / -1;
-  }
-
-  .night-wrap {
-    grid-column: 1 / -1;
-    display: flex;
-  }
-
-  .night-wrap div {
-    display: flex;
-    flex: 1;
-  }
-
-  .night-wrap section {
-    flex: 1;
-    display: grid;
-  }
-
-  .night-wrap h2 {
-    align-self: end;
-  }
-
-
-  /* Footer */
-  footer {
-    background-color: var(--white-400);
-  }
-
-  .ftr-link,
-  .logo-name-2,
-  .fa-copyright,
-  .fa-brands {
-    color: var(--black-100);
-  }
-
-  .logo-ftr {
-    display: none;
-  }
-
-  .logo-ftr-2 {
-    display: block;
-  }
 }
 
 
 /* ////////// 1100PX \\\\\\\\\\ */
 @media (min-width: 1100px) {
+
   /* Global styles */  
   main {
     margin: 30px 30px;
   }
 
-  /* Hamburger Menu / Navigation */
-
-  .hamburger-icon {
-    display: none;
+  .school-ad section {
+    padding: 0 20px 60px 20px;
   }
 
-  /* Header */
-  .logo {
+    /* Hamburger Menu / Navigation */
+
+  .hamburger-icon {
     display: none;
   }
 
@@ -706,19 +745,78 @@ margin-top: 10px;
     display: flex;
     flex-direction: row;
     gap: 40px;
-    font-family: var(--font-michroma);
-    font-size: var(--size-16);
-  }
-
-  #active-page-desktop {
-    color: var(--yellow-700);
-    text-shadow: 0px 20.299999237060547px 4px #D8D254;
   }
 
   .menu-desktop a:hover {
     transition: 0.3s; 
+  }
+
+  /* Typography */
+  .prof-wrap section :nth-child(2),
+  .menu-desktop {
+    font-family: var(--font-michroma);
+    font-size: var(--size-16);
+  }
+
+  /* Colors */
+  .prof-wrap {
+    color: var(--white-100);
+  }
+
+  .school-ad h3,
+  .school-ad section {
+    color: var(--black-100);
+  }
+
+  .menu-desktop a:hover { 
     color: var(--yellow-400);
-    text-shadow: 0px 20px 4px #FFFDD8;
+  }
+
+  #active-page-desktop {
+    color: var(--yellow-700);
+  }
+
+  .ftr-link:hover,
+  .fa-brands:hover {
+    color: var(--purple-500);
+  }
+
+  .school-ad {
+    background: var(--white-100);
+  }
+
+  .prof-wrap {
+    background: var(--black-100);
+  }
+
+  .menu-desktop a:hover { 
+    text-shadow: 0px 20px 4px var(--yellow-400);
+  }
+
+  #active-page-desktop {
+    text-shadow: 0px 20.299999237060547px 4px var(--yellow-700);
+  }
+
+  .ftr-link:hover,
+  .fa-brands:hover {
+    text-shadow: 0px 20px 4px var(--purple-500);
+  }
+
+  /* Header */
+
+  .logo {
+    display: none;
+  }
+
+    /* Footer */
+  .ftr-link:hover,
+  .fa-brands:hover {
+    transition: 0.3s;
+  }
+
+  .socials {
+    margin: 0 auto;
+    max-width: 1100px;
   }
 
   /* Index */
@@ -729,20 +827,35 @@ margin-top: 10px;
   }
 
   .museum-ad {
-    grid-column: 1 / 3;
     background-size: 100%;
     background-position-x: left;
     background-position-y: center;
     height: 800px;
   }
 
+  .night-wrap,
+  .museum-ad {
+    grid-column: 1 / 3;
+  }
+
+  .school-cta-bl,
+  .kids-cta-bl,
   .exhibition-ad-tablet {
     display: none;
   }
 
+  .school-cta-wh,
+  .kids-cta-wh,
   .exhibition-ad-desktop {
     display: block;
+  }
+
+  .exhibition-ad-desktop {
     grid-row: 1 / 2;
+  }
+
+  .exhibition-ad-desktop,
+  .prof-wrap {
     grid-column: 3 / -1;
   }
 
@@ -754,37 +867,22 @@ margin-top: 10px;
     margin: 40px 0 40px 0;
   }
 
+  .energetica-wrap,
   .hero-txt {
     grid-column: 2 / -1;
   }
 
-  .prof-wrap {
-    grid-column: 3 / -1;
-    background: var(--black-100);
-    color: var(--white-100);
-  }
-
-  .prof-wrap section :nth-child(2) {
-    font-family: var(--font-michroma);
-    font-size: var(--size-16);
-  }
-
   .night-wrap {
     grid-row: 3 / 4;
-    grid-column: 1 / 3;
   }
 
-  /* Footer */
-  .ftr-link:hover,
-  .fa-brands:hover {
-    transition: 0.3s;
-    color: var(--purple-500);
-    text-shadow: 0px 20px 4px rgba(128, 79, 191, 0.50);
+  .kids-club-ad {
+    grid-row: 4 / -1;
   }
 
-  .socials {
-    margin: 0 auto;
-    max-width: 1100px;
+  .school-ad {
+    grid-row: 2 / 3;
   }
+
 
 }
