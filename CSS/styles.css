@@ -117,6 +117,7 @@ nav,
   display: none;
 }
 
+.robotics-wrap img,
 .biology-wrap img,
 .evolution-wrap img,
 .cosmology-wrap img,
@@ -134,6 +135,7 @@ nav,
   border-radius: 15px 0 0 15px;
 }
 
+.robotics-wrap,
 .biology-wrap,
 .evolution-wrap,
 .cosmology-wrap,
@@ -149,6 +151,7 @@ nav,
   border-radius: 15px;
 }
 
+.robotics-wrap section,
 .biology-wrap section,
 .evolution-wrap section,
 .cosmology-wrap section,
@@ -162,6 +165,7 @@ nav,
   padding: 0 10px 45px 10px;
 }
 
+.robotics-wrap h2,
 .biology-wrap h2,
 .evolution-wrap h2,
 .cosmology-wrap h2,
@@ -361,6 +365,7 @@ nav,
   background: var(--black-100);
 }
 
+.robotics-wrap,
 .evolution-wrap,
 .energetica-wrap,
 .prof-wrap,
@@ -369,6 +374,7 @@ nav,
   background-color: var(--white-100);
 }
 
+.robotics-wrap,
 .biology-wrap,
 .evolution-wrap,
 .cosmology-wrap,
@@ -629,6 +635,7 @@ gap: 20px;
     padding: 0 20px;
   }
 
+  .robotics-wrap section,
   .biology-wrap section,
   .evolution-wrap section,
   .cosmology-wrap section,
@@ -644,6 +651,7 @@ gap: 20px;
     border-radius: 15px;
   }
 
+  .robotics-wrap img,
   .night-wrap img {
     border-radius: 15px 0 0 15px;
   }
@@ -655,6 +663,7 @@ gap: 20px;
 }
 
   /* Colors */
+  .robotics-wrap section,
   .school-ad section,
   .school-ad h3 {
     color: var(--white-100);
@@ -668,6 +677,7 @@ gap: 20px;
     color: var(--black-100);
   }
 
+  .robotics-wrap,
   .exhibition-ad-tablet,
   .school-ad {
     background: var(--black-100);
@@ -685,6 +695,11 @@ gap: 20px;
   .biology-wrap p {
     font-family: var(--font-gruppo);
     font-size: var(--size-21);
+  }
+
+  .robotics-wrap p {
+    font-family: var(--font-michroma);
+    font-size: var(--size-16);
   }
 
   /* Footer */
@@ -771,6 +786,23 @@ gap: 20px;
   .cosmology-wrap,
   .exhib-container h1 {
     grid-column: 1 / -1;
+  }
+
+  .robotics-wrap {
+    grid-column: 1 / -1;
+    display: flex;
+  }
+
+  .robotics-wrap div {
+    flex: 1;
+    display: flex;
+  }
+
+  .robotics-wrap section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
 }
@@ -970,6 +1002,11 @@ gap: 20px;
 
   .cosmology-wrap {
     grid-column: 1 / 3;
+  }
+
+  .robotics-wrap {
+    grid-column: 2 / -1;
+    display: block;
   }
 
 
