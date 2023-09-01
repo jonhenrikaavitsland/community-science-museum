@@ -101,6 +101,7 @@ body {
   flex-direction: column;
 }
 
+.exhib-wrap,
 .main-container {
   max-width: 1500px;
   margin: 0 auto;
@@ -116,6 +117,8 @@ nav,
   display: none;
 }
 
+.evolution-wrap img,
+.cosmology-wrap img,
 .night-wrap img,
 .prof-wrap img,
 .exhibitions-ad-mobile img,
@@ -130,6 +133,8 @@ nav,
   border-radius: 15px 0 0 15px;
 }
 
+.evolution-wrap,
+.cosmology-wrap,
 .energetica-wrap,
 .night-wrap,
 .prof-wrap,
@@ -142,6 +147,8 @@ nav,
   border-radius: 15px;
 }
 
+.evolution-wrap section,
+.cosmology-wrap section,
 .kids-club-ad section,
 .energetica-wrap section,
 .night-wrap section,
@@ -152,11 +159,17 @@ nav,
   padding: 0 10px 45px 10px;
 }
 
+.evolution-wrap h2,
+.cosmology-wrap h2,
 .prof-wrap h2,
 .exhibitions-ad-mobile section h3,
 .hero-txt h1,
 .kids-club-ad h3 {
   margin: 40px 0 20px 0;
+}
+
+#heading-title {
+  margin: 0 0 40px 0;
 }
 
 .prof-p,
@@ -239,7 +252,8 @@ h3,
 .energetica-wrap section :nth-child(2),
 .energetica-wrap section :nth-child(3),
 .kids-club-ad p,
-.school-ad p {
+.school-ad p,
+.cosmology-wrap p {
   font-family: var(--font-michroma);
 }
 
@@ -251,7 +265,8 @@ h3,
 .slogan,
 .night-wrap section :nth-child(3),
 .cta,
-.kids-club-ad p {
+.kids-club-ad p,
+.cosmology-wrap p {
   font-size: var(--size-16);
 }
 
@@ -313,7 +328,8 @@ a,
 .night-wrap h2,
 .night-wrap p,
 h3,
-.kids-club-ad p {
+.kids-club-ad p,
+.cosmology-wrap section {
   color: var(--white-100);
 }
 
@@ -332,10 +348,12 @@ nav,
 .exhibitions-ad-mobile,
 .exhibition-ad-desktop,
 .night-wrap,
-.kids-club-ad {
+.kids-club-ad,
+.cosmology-wrap {
   background: var(--black-100);
 }
 
+.evolution-wrap,
 .energetica-wrap,
 .prof-wrap,
 .hero-txt,
@@ -343,6 +361,8 @@ nav,
   background-color: var(--white-100);
 }
 
+.evolution-wrap,
+.cosmology-wrap,
 .kids-club-ad,
 .energetica-wrap,
 .night-wrap,
@@ -546,6 +566,13 @@ margin-top: 20px;
 =====================
 */
 
+.exhib-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
 
 
 /*
@@ -592,6 +619,8 @@ margin-top: 20px;
     padding: 0 20px;
   }
 
+  .evolution-wrap section,
+  .cosmology-wrap section,
   .kids-club-ad section,
   .energetica-wrap section,
   .night-wrap section,
@@ -710,7 +739,6 @@ margin-top: 20px;
     justify-self: center;
     margin-top: 40px;
   }
-
 }
 
 
@@ -899,5 +927,17 @@ margin-top: 20px;
     grid-row: 2 / 3;
   }
 
+  /* Exhibition */
+  .exhib-container {
+    flex-direction: row;
+    gap: 30px;
+  }
 
+  .cosmology-wrap {
+    flex: 2;
+  }
+
+  .evolution-wrap {
+    flex: 1;
+  }
 }
