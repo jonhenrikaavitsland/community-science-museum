@@ -739,6 +739,12 @@ margin-top: 20px;
     justify-self: center;
     margin-top: 40px;
   }
+
+  /* Exhibitions */
+
+  .evolution-wrap {
+    flex: 1;
+  }
 }
 
 
@@ -937,7 +943,5 @@ margin-top: 20px;
     flex: 2;
   }
 
-  .evolution-wrap {
-    flex: 1;
-  }
+
 }
