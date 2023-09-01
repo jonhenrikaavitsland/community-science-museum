@@ -844,6 +844,7 @@ gap: 20px;
     font-size: var(--size-16);
     }
 
+  .robotics-wrap p,
   .kids-club-ad p {
     font-family: var(--font-gruppo);
     font-size: var(--size-21);
@@ -879,6 +880,7 @@ gap: 20px;
     color: var(--purple-500);
   } */
 
+  .robotics-wrap,
   .kids-club-ad,
   .school-ad {
     background: var(--white-100);
@@ -887,6 +889,10 @@ gap: 20px;
   .ftr-home,
   .prof-wrap {
     background: var(--black-100);
+  }
+
+  .robotics-wrap section {
+    color: var(--black-100);
   }
 
   .ftr-link:hover,
