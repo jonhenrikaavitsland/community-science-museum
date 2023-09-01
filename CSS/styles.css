@@ -513,7 +513,8 @@ margin-top: 20px;
   gap: 7px;
 }
 
-.logo-ftr-2 {
+.ftr-exhib .logo-ftr-2,
+.ftr-home .logo-ftr-2 {
   display: none;
 }
 
@@ -699,6 +700,7 @@ gap: 20px;
     background: var(--black-100);
   }
 
+  .ftr-exhib,
   .ecology-wrap,
   .biology-wrap {
     background: var(--white-100);
@@ -729,11 +731,13 @@ gap: 20px;
 
   /* Footer */
 
-  .logo-ftr {
+  .ftr-exhib .logo-ftr,
+  .ftr-home .logo-ftr {
     display: none;
   }
 
-  .logo-ftr-2 {
+  .ftr-exhib .logo-ftr-2,
+  .ftr-home .logo-ftr-2 {
     display: block;
   }
 
@@ -903,6 +907,10 @@ gap: 20px;
     color: var(--white-100);
   }
 
+  .ftr-exhib .fa-brands,
+  .ftr-exhib .ftr-link,
+  .ftr-exhib .fa-copyright,
+  .ftr-exhib .logo-name-2,
   .kids-club-ad p,
   .kids-club-ad h3,
   .school-ad h3,
@@ -920,9 +928,10 @@ gap: 20px;
     color: var(--yellow-700);
   }
 
-/* {
+  .ftr-exhib .ftr-link:hover,
+  .ftr-exhib .fa-brands:hover {
     color: var(--purple-500);
-  } */
+  } 
 
   .robotics-wrap,
   .kids-club-ad,
@@ -939,6 +948,11 @@ gap: 20px;
   .robotics-wrap section {
     color: var(--black-100);
   }
+
+  .ftr-exhib .ftr-link:hover,
+  .ftr-exhib .fa-brands:hover {
+    text-shadow: 0px 20px 4px var(--purple-500);
+  }  
 
   .ftr-link:hover,
   .fa-brands:hover,
@@ -961,6 +975,8 @@ gap: 20px;
   }
 
     /* Footer */
+  .ftr-exhib .ftr-link:hover,
+  .ftr-exhib .fa-brands:hover,
   .ftr-link:hover,
   .fa-brands:hover {
     transition: 0.3s;
@@ -971,11 +987,11 @@ gap: 20px;
     max-width: 1100px;
   }
 
-  .logo-ftr {
+  .ftr-home .logo-ftr {
     display: block;
   }
 
-  .logo-ftr-2 {
+  .ftr-home .logo-ftr-2 {
     display: none;
   }
 
@@ -1060,7 +1076,7 @@ gap: 20px;
     display: block;
   }
 
-  .energetica-wrap {
+  .exhib-container .energetica-wrap {
     grid-column: 3 / -1;
   }
 
