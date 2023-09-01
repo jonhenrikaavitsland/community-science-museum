@@ -180,8 +180,13 @@ nav,
   margin: 40px 0 20px 0;
 }
 
+.energetica-heading-part-3,
 #heading-title {
   margin: 0 0 40px 0;
+}
+
+.energetica-wrap h2 {
+  margin: 40px 0 0 0;
 }
 
 .prof-p,
@@ -671,6 +676,7 @@ gap: 20px;
 }
 
   /* Colors */
+  .exhib-container .energetica-wrap section,
   .robotics-wrap section,
   .school-ad section,
   .school-ad h3 {
@@ -686,6 +692,7 @@ gap: 20px;
     color: var(--black-100);
   }
 
+  .exhib-container .energetica-wrap,
   .robotics-wrap,
   .exhibition-ad-tablet,
   .school-ad {
@@ -705,12 +712,19 @@ gap: 20px;
   .ecology-wrap p,
   .biology-wrap p {
     font-family: var(--font-gruppo);
-    font-size: var(--size-21);
   }
 
+  .exhib-container .energetica-wrap p,
   .robotics-wrap p {
     font-family: var(--font-michroma);
     font-size: var(--size-16);
+  }
+
+  .exhib-container .energetica-wrap .energetica-heading-part-2,
+  .exhib-container .energetica-wrap .energetica-heading-part-3,
+  .ecology-wrap p,
+  .biology-wrap p {
+    font-size: var(--size-21);
   }
 
   /* Footer */
@@ -1044,6 +1058,10 @@ gap: 20px;
   .robotics-wrap {
     grid-column: 2 / -1;
     display: block;
+  }
+
+  .energetica-wrap {
+    grid-column: 3 / -1;
   }
 
 
