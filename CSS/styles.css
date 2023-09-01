@@ -117,6 +117,7 @@ nav,
   display: none;
 }
 
+.ecology-wrap img,
 .robotics-wrap img,
 .biology-wrap img,
 .evolution-wrap img,
@@ -135,6 +136,7 @@ nav,
   border-radius: 15px 0 0 15px;
 }
 
+.ecology-wrap,
 .robotics-wrap,
 .biology-wrap,
 .evolution-wrap,
@@ -151,6 +153,7 @@ nav,
   border-radius: 15px;
 }
 
+.ecology-wrap section,
 .robotics-wrap section,
 .biology-wrap section,
 .evolution-wrap section,
@@ -165,6 +168,7 @@ nav,
   padding: 0 10px 45px 10px;
 }
 
+.ecology-wrap h2,
 .robotics-wrap h2,
 .biology-wrap h2,
 .evolution-wrap h2,
@@ -262,7 +266,8 @@ h3,
 .kids-club-ad p,
 .school-ad p,
 .cosmology-wrap p,
-.biology-wrap p {
+.biology-wrap p,
+.ecology-wrap p {
   font-family: var(--font-michroma);
 }
 
@@ -276,7 +281,8 @@ h3,
 .cta,
 .kids-club-ad p,
 .cosmology-wrap p,
-.biology-wrap p {
+.biology-wrap p,
+.ecology-wrap p {
   font-size: var(--size-16);
 }
 
@@ -340,7 +346,8 @@ a,
 h3,
 .kids-club-ad p,
 .cosmology-wrap section,
-.biology-wrap section {
+.biology-wrap section,
+.ecology-wrap section {
   color: var(--white-100);
 }
 
@@ -361,7 +368,8 @@ nav,
 .night-wrap,
 .kids-club-ad,
 .cosmology-wrap,
-.biology-wrap {
+.biology-wrap,
+.ecology-wrap {
   background: var(--black-100);
 }
 
@@ -374,6 +382,7 @@ nav,
   background-color: var(--white-100);
 }
 
+.ecology-wrap,
 .robotics-wrap,
 .biology-wrap,
 .evolution-wrap,
@@ -588,9 +597,6 @@ gap: 20px;
 }
 
 
-
-
-
 /*
 ============
 13. Visit Us
@@ -635,6 +641,7 @@ gap: 20px;
     padding: 0 20px;
   }
 
+  .ecology-wrap section,
   .robotics-wrap section,
   .biology-wrap section,
   .evolution-wrap section,
@@ -651,6 +658,7 @@ gap: 20px;
     border-radius: 15px;
   }
 
+  .ecology-wrap img,
   .robotics-wrap img,
   .night-wrap img {
     border-radius: 15px 0 0 15px;
@@ -669,6 +677,7 @@ gap: 20px;
     color: var(--white-100);
   }
 
+  .ecology-wrap section,
   .biology-wrap section,
   .ftr-link,
   .logo-name-2,
@@ -683,6 +692,7 @@ gap: 20px;
     background: var(--black-100);
   }
 
+  .ecology-wrap,
   .biology-wrap {
     background: var(--white-100);
   }
@@ -692,6 +702,7 @@ gap: 20px;
   }
 
   /* Typography */
+  .ecology-wrap p,
   .biology-wrap p {
     font-family: var(--font-gruppo);
     font-size: var(--size-21);
@@ -805,6 +816,23 @@ gap: 20px;
     justify-content: space-around;
   }
 
+  .ecology-wrap div {
+    flex: 1;
+    display: flex;
+  }
+
+  .ecology-wrap {
+    grid-column: 1 / -1;
+    display: flex;
+  }
+
+  .ecology-wrap section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
 }
 
 
@@ -838,6 +866,7 @@ gap: 20px;
   }
 
   /* Typography */
+  .ecology-wrap p,
   .prof-wrap section :nth-child(2),
   .menu-desktop {
     font-family: var(--font-michroma);
@@ -855,7 +884,8 @@ gap: 20px;
   .ftr-link,
   .fa-copyright,
   .logo-name-2,
-  .prof-wrap {
+  .prof-wrap,
+  .ecology-wrap section {
     color: var(--white-100);
   }
 
@@ -887,7 +917,8 @@ gap: 20px;
   }
 
   .ftr-home,
-  .prof-wrap {
+  .prof-wrap,
+  .ecology-wrap {
     background: var(--black-100);
   }
 
@@ -1005,7 +1036,7 @@ gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
-
+  .ecology-wrap,
   .cosmology-wrap {
     grid-column: 1 / 3;
   }
