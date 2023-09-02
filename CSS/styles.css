@@ -565,6 +565,7 @@ margin-top: 20px;
   gap: 7px;
 }
 
+.ftr-explore .logo-ftr-2,
 .ftr-exhib .logo-ftr-2,
 .ftr-home .logo-ftr-2 {
   display: none;
@@ -741,6 +742,10 @@ gap: 20px;
 }
 
   /* Colors */
+  .ftr-explore .fa-brands,
+  .ftr-explore .ftr-link,
+  .ftr-explore .fa-copyright,
+  .ftr-explore .logo-name-2,
   .explore-4-wrap section,
   .exhib-container .energetica-wrap section,
   .robotics-wrap section,
@@ -760,6 +765,7 @@ gap: 20px;
     color: var(--black-100);
   }
 
+  .ftr-explore,
   .explore-4-wrap,
   .exhib-container .energetica-wrap,
   .robotics-wrap,
@@ -770,12 +776,12 @@ gap: 20px;
 
   .explore-5-wrap,
   .explore-3-wrap,
-  .ftr-exhib,
   .ecology-wrap,
   .biology-wrap {
     background: var(--white-100);
   }
 
+  .ftr-exhib,
   .ftr-home {
     background-color: var(--white-400);
   }
@@ -1030,6 +1036,10 @@ gap: 20px;
     color: var(--white-100);
   }
 
+  .ftr-explore .fa-brands,
+  .ftr-explore .ftr-link,
+  .ftr-explore .fa-copyright,
+  .ftr-explore .logo-name-2,
   .explore-4-wrap p,
   .robotics-wrap section,
   .ftr-exhib .fa-brands,
@@ -1053,6 +1063,8 @@ gap: 20px;
     color: var(--yellow-700);
   }
 
+  .ftr-explore .fa-brands:hover,
+  .ftr-explore .ftr-link:hover,
   .ftr-exhib .ftr-link:hover,
   .ftr-exhib .fa-brands:hover {
     color: var(--purple-500);
@@ -1065,6 +1077,10 @@ gap: 20px;
     background: var(--white-100);
   }
 
+  .ftr-explore {
+    background: var(--white-400);
+  }
+
   .explore-5-wrap,
   .explore-6-wrap,
   .explore-2-wrap,
@@ -1074,6 +1090,8 @@ gap: 20px;
     background: var(--black-100);
   }
 
+  .ftr-explore .fa-brands:hover,
+  .ftr-explore .ftr-link:hover,
   .ftr-exhib .ftr-link:hover,
   .ftr-exhib .fa-brands:hover {
     text-shadow: 0px 20px 4px var(--purple-500);
@@ -1089,10 +1107,6 @@ gap: 20px;
     text-shadow: 0px 20.299999237060547px 4px var(--yellow-700);
   }
 
-/*{
-    text-shadow: 0px 20px 4px var(--purple-500);
-  }*/
-
   /* Header */
 
   .logo {
@@ -1100,8 +1114,6 @@ gap: 20px;
   }
 
     /* Footer */
-  .ftr-exhib .ftr-link:hover,
-  .ftr-exhib .fa-brands:hover,
   .ftr-link:hover,
   .fa-brands:hover {
     transition: 0.3s;
@@ -1112,10 +1124,12 @@ gap: 20px;
     max-width: 1100px;
   }
 
+  .ftr-explore .logo-ftr-2,
   .ftr-home .logo-ftr {
     display: block;
   }
 
+  .ftr-explore .logo-ftr,
   .ftr-home .logo-ftr-2 {
     display: none;
   }
@@ -1242,21 +1256,17 @@ gap: 20px;
     flex: 2;
   }
 
+  .explore-6-wrap section,
   .explore-4-wrap section {
     display: grid;
   }
 
+  .explore-6-wrap section p,
   .explore-4-wrap section p {
     align-self: end;
   }
 
-  .explore-6-wrap section {
-    display: grid;
-  }
 
-  .explore-6-wrap section p {
-    align-self: end;
-  }
 
 
 
