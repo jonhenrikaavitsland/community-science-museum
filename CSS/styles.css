@@ -101,6 +101,7 @@ body {
   flex-direction: column;
 }
 
+.explore-container,
 .exhib-container,
 .main-container {
   max-width: 1500px;
@@ -109,7 +110,7 @@ body {
 
 main {
   flex: 1;
-  margin: 20px 10px;
+  padding: 20px 10px;
 }
 
 nav,
@@ -117,6 +118,12 @@ nav,
   display: none;
 }
 
+.explore-6-wrap img,
+.explore-5-wrap img,
+.explore-4-wrap img,
+.explore-3-wrap img,
+.explore-2-wrap img,
+.explore-1-wrap img,
 .ecology-wrap img,
 .robotics-wrap img,
 .biology-wrap img,
@@ -136,6 +143,12 @@ nav,
   border-radius: 15px 0 0 15px;
 }
 
+.explore-6-wrap,
+.explore-5-wrap,
+.explore-4-wrap,
+.explore-3-wrap,
+.explore-2-wrap,
+.explore-1-wrap,
 .ecology-wrap,
 .robotics-wrap,
 .biology-wrap,
@@ -153,6 +166,8 @@ nav,
   border-radius: 15px;
 }
 
+.explore-container :nth-child(2) section,
+.explore-container :nth-child(1) section,
 .ecology-wrap section,
 .robotics-wrap section,
 .biology-wrap section,
@@ -168,6 +183,7 @@ nav,
   padding: 0 10px 45px 10px;
 }
 
+
 .ecology-wrap h2,
 .robotics-wrap h2,
 .biology-wrap h2,
@@ -180,13 +196,24 @@ nav,
   margin: 40px 0 20px 0;
 }
 
+.explore-container h1,
 .energetica-heading-part-3,
 #heading-title {
   margin: 0 0 40px 0;
 }
 
+.explore-6-wrap section,
+.explore-5-wrap section,
+.explore-4-wrap section,
+.explore-3-wrap section,
+.explore-2-wrap section,
+.explore-1-wrap section,
 .energetica-wrap h2 {
   margin: 40px 0 0 0;
+}
+
+.explore-container h2 {
+  margin: 80px 0 30px 0;
 }
 
 .prof-p,
@@ -206,7 +233,9 @@ h3,
 .energetica-wrap section :nth-child(2),
 .energetica-wrap section :nth-child(3),
 .kids-club-ad section div,
-.school-ad section {
+.school-ad section,
+.explore-6-wrap section div,
+.explore-4-wrap section div {
   text-align: center;
 }
 
@@ -272,7 +301,10 @@ h3,
 .school-ad p,
 .cosmology-wrap p,
 .biology-wrap p,
-.ecology-wrap p {
+.ecology-wrap p,
+.explore-5-wrap p,
+.explore-3-wrap p,
+.explore-1-wrap p {
   font-family: var(--font-michroma);
 }
 
@@ -287,7 +319,10 @@ h3,
 .kids-club-ad p,
 .cosmology-wrap p,
 .biology-wrap p,
-.ecology-wrap p {
+.ecology-wrap p,
+.explore-5-wrap p,
+.explore-3-wrap p,
+.explore-1-wrap p {
   font-size: var(--size-16);
 }
 
@@ -295,6 +330,7 @@ h3,
   font-size: var(--size-21);
 }
 
+.explore-container h2,
 .fa-brands,
 h1 {
   font-size: var(--size-27);
@@ -311,6 +347,7 @@ h1 {
   border-radius: 50px;
 }
 
+.contact,
 .visit,
 .explore,
 .learn,
@@ -352,7 +389,10 @@ h3,
 .kids-club-ad p,
 .cosmology-wrap section,
 .biology-wrap section,
-.ecology-wrap section {
+.ecology-wrap section,
+.explore-5-wrap,
+.explore-3-wrap,
+.explore-1-wrap {
   color: var(--white-100);
 }
 
@@ -374,10 +414,16 @@ nav,
 .kids-club-ad,
 .cosmology-wrap,
 .biology-wrap,
-.ecology-wrap {
+.ecology-wrap,
+.explore-5-wrap,
+.explore-3-wrap,
+.explore-1-wrap {
   background: var(--black-100);
 }
 
+.explore-6-wrap,
+.explore-4-wrap,
+.explore-2-wrap,
 .robotics-wrap,
 .evolution-wrap,
 .energetica-wrap,
@@ -387,6 +433,12 @@ nav,
   background-color: var(--white-100);
 }
 
+.explore-6-wrap,
+.explore-5-wrap,
+.explore-4-wrap,
+.explore-3-wrap,
+.explore-2-wrap,
+.explore-1-wrap,
 .ecology-wrap,
 .robotics-wrap,
 .biology-wrap,
@@ -587,6 +639,16 @@ margin-top: 20px;
 11. Explore
 ===========
 */
+.explore-grid-2,
+.explore-grid-1 {
+  display: grid;
+  gap: 20px;
+}
+
+.explore-6-wrap section div,
+.explore-4-wrap section div {
+  margin: 30px 0 0 0;
+}
 
 
 
@@ -639,7 +701,7 @@ gap: 20px;
 @media (min-width: 601px) {
   /* Global styles */
   main {
-    margin: 20px 20px;
+    padding: 20px 20px;
   }
 
   .school-ad section,
@@ -647,6 +709,8 @@ gap: 20px;
     padding: 0 20px;
   }
 
+  .explore-container :nth-child(2) section, 
+  .explore-container :nth-child(1) section,
   .ecology-wrap section,
   .robotics-wrap section,
   .biology-wrap section,
@@ -677,6 +741,7 @@ gap: 20px;
 }
 
   /* Colors */
+  .explore-4-wrap section,
   .exhib-container .energetica-wrap section,
   .robotics-wrap section,
   .school-ad section,
@@ -684,6 +749,8 @@ gap: 20px;
     color: var(--white-100);
   }
 
+  .explore-5-wrap section,
+  .explore-3-wrap section,
   .ecology-wrap section,
   .biology-wrap section,
   .ftr-link,
@@ -693,6 +760,7 @@ gap: 20px;
     color: var(--black-100);
   }
 
+  .explore-4-wrap,
   .exhib-container .energetica-wrap,
   .robotics-wrap,
   .exhibition-ad-tablet,
@@ -700,6 +768,8 @@ gap: 20px;
     background: var(--black-100);
   }
 
+  .explore-5-wrap,
+  .explore-3-wrap,
   .ftr-exhib,
   .ecology-wrap,
   .biology-wrap {
@@ -712,16 +782,21 @@ gap: 20px;
 
   /* Typography */
   .ecology-wrap p,
-  .biology-wrap p {
+  .biology-wrap p,
+  .explore-3-wrap p,
+  .explore-5-wrap p {
     font-family: var(--font-gruppo);
   }
 
+  .explore-4-wrap p,
   .exhib-container .energetica-wrap p,
   .robotics-wrap p {
     font-family: var(--font-michroma);
     font-size: var(--size-16);
   }
 
+  .explore-5-wrap p,
+  .explore-3-wrap p,
   .exhib-container .energetica-wrap .energetica-heading-part-2,
   .exhib-container .energetica-wrap .energetica-heading-part-3,
   .ecology-wrap p,
@@ -851,6 +926,34 @@ gap: 20px;
     justify-content: space-around;
   }
 
+  /* Explore */
+  .explore-grid-2,
+  .explore-grid-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .explore-container h2,
+  .explore-4-wrap,
+  .explore-1-wrap,
+  .explore-container h1 {
+    grid-column: 1 / -1;
+  }
+
+  .explore-1-wrap div,
+  .explore-1-wrap {
+    display: flex;
+  }
+
+  .explore-1-wrap div,
+  .explore-1-wrap section {
+    flex: 1;
+  }
+
+  .explore-1-wrap section {
+    display: flex;
+    align-items: center;
+  }
+
 }
 
 
@@ -859,11 +962,24 @@ gap: 20px;
 
   /* Global styles */  
   main {
-    margin: 30px 30px;
+    padding: 30px 30px;
   }
 
   .school-ad section {
     padding: 0 20px 60px 20px;
+  }
+
+  .main-container,
+  .exhib-container,
+  .explore-grid-2,
+  .explore-grid-1 {
+    gap: 30px;
+  }
+
+  .explore-6-wrap img,
+  .explore-4-wrap img,
+  .explore-1-wrap img {
+    border-radius: 15px 0 0 15px;
   }
 
     /* Hamburger Menu / Navigation */
@@ -884,6 +1000,9 @@ gap: 20px;
   }
 
   /* Typography */
+  .explore-5-wrap p,
+  .explore-6-wrap p,
+  .explore-2-wrap p,
   .ecology-wrap p,
   .prof-wrap section :nth-child(2),
   .menu-desktop {
@@ -891,6 +1010,7 @@ gap: 20px;
     font-size: var(--size-16);
     }
 
+  .explore-4-wrap p,
   .robotics-wrap p,
   .kids-club-ad p {
     font-family: var(--font-gruppo);
@@ -898,6 +1018,9 @@ gap: 20px;
   }
 
   /* Colors */
+  .explore-5-wrap p,
+  .explore-6-wrap p,
+  .explore-2-wrap p,
   .fa-brands,
   .ftr-link,
   .fa-copyright,
@@ -907,6 +1030,8 @@ gap: 20px;
     color: var(--white-100);
   }
 
+  .explore-4-wrap p,
+  .robotics-wrap section,
   .ftr-exhib .fa-brands,
   .ftr-exhib .ftr-link,
   .ftr-exhib .fa-copyright,
@@ -933,20 +1058,20 @@ gap: 20px;
     color: var(--purple-500);
   } 
 
+  .explore-4-wrap,
   .robotics-wrap,
   .kids-club-ad,
   .school-ad {
     background: var(--white-100);
   }
 
+  .explore-5-wrap,
+  .explore-6-wrap,
+  .explore-2-wrap,
   .ftr-home,
   .prof-wrap,
   .ecology-wrap {
     background: var(--black-100);
-  }
-
-  .robotics-wrap section {
-    color: var(--black-100);
   }
 
   .ftr-exhib .ftr-link:hover,
@@ -999,7 +1124,6 @@ gap: 20px;
   .main-container {
     grid-template-rows: repeat(4, min-content);
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
   }
 
   .museum-ad {
@@ -1064,8 +1188,8 @@ gap: 20px;
   .exhib-container {
     grid-template-rows: repeat(4, min-content);
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
   }
+
   .ecology-wrap,
   .cosmology-wrap {
     grid-column: 1 / 3;
@@ -1079,6 +1203,63 @@ gap: 20px;
   .exhib-container .energetica-wrap {
     grid-column: 3 / -1;
   }
+
+
+    /* Explore */
+    .explore-grid-2,
+    .explore-grid-1 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .explore-6-wrap,
+    .explore-1-wrap {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+    }
+
+    .explore-4-wrap {
+      grid-column: 2 / -1;
+    }
+
+  .explore-5-wrap {
+    grid-column: 3 / -1;
+  }
+
+  .explore-6-wrap > div,
+  .explore-6-wrap,
+  .explore-4-wrap > div,
+  .explore-4-wrap {
+    display: flex;
+  }
+
+  .explore-6-wrap section,
+  .explore-4-wrap > div,
+  .explore-4-wrap section {
+    flex: 1;
+  }
+
+  .explore-6-wrap > div {
+    flex: 2;
+  }
+
+  .explore-4-wrap section {
+    display: grid;
+  }
+
+  .explore-4-wrap section p {
+    align-self: end;
+  }
+
+  .explore-6-wrap section {
+    display: grid;
+  }
+
+  .explore-6-wrap section p {
+    align-self: end;
+  }
+
+
+
 
 
 }
