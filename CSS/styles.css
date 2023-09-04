@@ -101,6 +101,7 @@ body {
   flex-direction: column;
 }
 
+.visit-container,
 .explore-container,
 .exhib-container,
 .main-container {
@@ -118,6 +119,10 @@ nav,
   display: none;
 }
 
+.food-wrap img,
+.hours-wrap img,
+.admission-wrap img,
+.location-wrap img,
 .explore-6-wrap img,
 .explore-5-wrap img,
 .explore-4-wrap img,
@@ -143,6 +148,13 @@ nav,
   border-radius: 15px 0 0 15px;
 }
 
+.shop-wrap,
+.access_shop-wrap_desktop,
+.food-wrap,
+.accessibility-wrap,
+.hours-wrap,
+.admission-wrap,
+.location-wrap,
 .explore-6-wrap,
 .explore-5-wrap,
 .explore-4-wrap,
@@ -166,6 +178,12 @@ nav,
   border-radius: 15px;
 }
 
+.shop-wrap,
+.food-wrap section,
+.accessibility-wrap,
+.hours-wrap section,
+.admission-wrap section,
+.location-wrap section,
 .explore-container :nth-child(2) section,
 .explore-container :nth-child(1) section,
 .ecology-wrap section,
@@ -183,7 +201,11 @@ nav,
   padding: 0 10px 45px 10px;
 }
 
-
+.shop-wrap h2,
+.access_shop-wrap_desktop h2,
+.food-wrap h2,
+.accessibility-wrap h2,
+.hours-wrap h2,
 .ecology-wrap h2,
 .robotics-wrap h2,
 .biology-wrap h2,
@@ -196,12 +218,15 @@ nav,
   margin: 40px 0 20px 0;
 }
 
+.visit-container h1,
 .explore-container h1,
 .energetica-heading-part-3,
 #heading-title {
   margin: 0 0 40px 0;
 }
 
+.admission-wrap h2,
+.location-wrap h2,
 .explore-6-wrap section,
 .explore-5-wrap section,
 .explore-4-wrap section,
@@ -304,7 +329,10 @@ h3,
 .ecology-wrap p,
 .explore-5-wrap p,
 .explore-3-wrap p,
-.explore-1-wrap p {
+.explore-1-wrap p,
+.admission-wrap p,
+.accessibility-wrap p,
+.shop-wrap p {
   font-family: var(--font-michroma);
 }
 
@@ -322,7 +350,10 @@ h3,
 .ecology-wrap p,
 .explore-5-wrap p,
 .explore-3-wrap p,
-.explore-1-wrap p {
+.explore-1-wrap p,
+.admission-wrap p,
+.accessibility-wrap p,
+.shop-wrap p {
   font-size: var(--size-16);
 }
 
@@ -392,7 +423,10 @@ h3,
 .ecology-wrap section,
 .explore-5-wrap,
 .explore-3-wrap,
-.explore-1-wrap {
+.explore-1-wrap,
+.admission-wrap,
+.accessibility-wrap,
+.shop-wrap {
   color: var(--white-100);
 }
 
@@ -401,7 +435,11 @@ h3,
 }
 
 .cta,
-.school-ad h3 {
+.school-ad h3,
+.ftr-visit .fa-brands,
+.ftr-visit .ftr-link,
+.ftr-visit .logo-name-2,
+.ftr-visit .fa-copyright {
   color: var(--black-100);
 }
 
@@ -417,10 +455,17 @@ nav,
 .ecology-wrap,
 .explore-5-wrap,
 .explore-3-wrap,
-.explore-1-wrap {
+.explore-1-wrap,
+.admission-wrap,
+.accessibility-wrap,
+.shop-wrap {
   background: var(--black-100);
 }
 
+.access_shop-wrap_desktop,
+.food-wrap,
+.hours-wrap,
+.location-wrap,
 .explore-6-wrap,
 .explore-4-wrap,
 .explore-2-wrap,
@@ -433,6 +478,17 @@ nav,
   background-color: var(--white-100);
 }
 
+.ftr-visit {
+  background-color: var(--white-400);
+}
+
+.shop-wrap,
+.access_shop-wrap_desktop,
+.food-wrap,
+.accessibility-wrap,
+.hours-wrap,
+.admission-wrap,
+.location-wrap,
 .explore-6-wrap,
 .explore-5-wrap,
 .explore-4-wrap,
@@ -565,6 +621,7 @@ margin-top: 20px;
   gap: 7px;
 }
 
+.ftr-visit .logo-ftr,
 .ftr-explore .logo-ftr-2,
 .ftr-exhib .logo-ftr-2,
 .ftr-home .logo-ftr-2 {
@@ -671,10 +728,35 @@ gap: 20px;
 13. Visit Us
 ============
 */
+.hours-wrap section div,
+.admission-wrap section,
+.location-wrap section,
+.visit-container {
+  display: grid;
+}
 
+.visit-container {
+  grid-template-rows: repeat(7, min-content);
+}
 
+.admission-wrap section,
+.location-wrap section,
+.visit-container {
+  gap: 20px;
+}
 
+.hours-wrap section div {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
 
+.hours-wrap section > p {
+  margin-top: 20px;
+}
+
+.access_shop-wrap_desktop {
+  display: none;
+}
 
 /*
 ================
@@ -710,6 +792,11 @@ gap: 20px;
     padding: 0 20px;
   }
 
+  .shop-wrap,
+  .food-wrap section,
+  .accessibility-wrap,
+  .admission-wrap section,
+  .location-wrap section,
   .explore-container :nth-child(2) section, 
   .explore-container :nth-child(1) section,
   .ecology-wrap section,
@@ -729,6 +816,7 @@ gap: 20px;
     border-radius: 15px;
   }
 
+  .food-wrap img,
   .ecology-wrap img,
   .robotics-wrap img,
   .night-wrap img {
@@ -893,41 +981,31 @@ gap: 20px;
     grid-template-columns: 1fr 1fr;
   }
 
+  .ecology-wrap,
+  .robotics-wrap,
   .cosmology-wrap,
   .exhib-container h1 {
     grid-column: 1 / -1;
   }
 
-  .robotics-wrap {
-    grid-column: 1 / -1;
+  .ecology-wrap section,
+  .ecology-wrap,
+  .ecology-wrap div,
+  .robotics-wrap section,
+  .robotics-wrap,
+  .robotics-wrap div {
     display: flex;
   }
 
+  .ecology-wrap section,
+  .ecology-wrap div,
+  .robotics-wrap section,
   .robotics-wrap div {
     flex: 1;
-    display: flex;
   }
 
+  .ecology-wrap section,
   .robotics-wrap section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .ecology-wrap div {
-    flex: 1;
-    display: flex;
-  }
-
-  .ecology-wrap {
-    grid-column: 1 / -1;
-    display: flex;
-  }
-
-  .ecology-wrap section {
-    flex: 1;
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
@@ -960,6 +1038,47 @@ gap: 20px;
     align-items: center;
   }
 
+  /* Visit Us */
+
+  .visit-container {
+    grid-template-rows: repeat(5, min-content);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .food-wrap,
+  .admission-wrap,
+  .visit-container h1 {
+    grid-column: 1 / -1;
+  }
+
+  .hours-wrap {
+    grid-row: 2 / 3;
+    grid-column: 2 / -1;
+  }
+
+  .food-wrap div,
+  .food-wrap {
+    display: flex;
+  }
+
+  .food-wrap div,
+  .food-wrap section {
+    flex: 1;
+  }
+
+  .food-wrap section {
+    display: grid;
+  }
+
+  .food-wrap h2 {
+    align-self: end;
+  }
+
+  .accessibility-wrap {
+    grid-row: 5 / -1;
+  }
+
+
 }
 
 
@@ -971,10 +1090,12 @@ gap: 20px;
     padding: 30px 30px;
   }
 
+  .access_shop-wrap_desktop,
   .school-ad section {
     padding: 0 20px 60px 20px;
   }
 
+  .visit-container,
   .main-container,
   .exhib-container,
   .explore-grid-2,
@@ -1006,6 +1127,8 @@ gap: 20px;
   }
 
   /* Typography */
+  .location-wrap p,
+  .hours-wrap p,
   .explore-5-wrap p,
   .explore-6-wrap p,
   .explore-2-wrap p,
@@ -1024,6 +1147,10 @@ gap: 20px;
   }
 
   /* Colors */
+  .ftr-visit .fa-brands,
+  .ftr-visit .ftr-link,
+  .ftr-visit .fa-copyright,
+  .ftr-visit .logo-name-2,
   .explore-5-wrap p,
   .explore-6-wrap p,
   .explore-2-wrap p,
@@ -1032,7 +1159,9 @@ gap: 20px;
   .fa-copyright,
   .logo-name-2,
   .prof-wrap,
-  .ecology-wrap section {
+  .ecology-wrap section,
+  .location-wrap,
+  .hours-wrap {
     color: var(--white-100);
   }
 
@@ -1081,6 +1210,9 @@ gap: 20px;
     background: var(--white-400);
   }
 
+  .ftr-visit,
+  .location-wrap,
+  .hours-wrap,
   .explore-5-wrap,
   .explore-6-wrap,
   .explore-2-wrap,
@@ -1124,11 +1256,13 @@ gap: 20px;
     max-width: 1100px;
   }
 
+  .ftr-visit .logo-ftr,
   .ftr-explore .logo-ftr-2,
   .ftr-home .logo-ftr {
     display: block;
   }
 
+  .ftr-visit .logo-ftr-2,
   .ftr-explore .logo-ftr,
   .ftr-home .logo-ftr-2 {
     display: none;
@@ -1266,9 +1400,37 @@ gap: 20px;
     align-self: end;
   }
 
+  /* Visit Us */
 
+  .visit-container {
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
+  .hours-wrap {
+    grid-column: 3 / -1;
+  }
 
+  .admission-wrap {
+    grid-column: 2 / 3;
+  }
+
+  .shop-wrap,
+  .accessibility-wrap {
+    display: none;
+  }
+
+  .food-wrap {
+    grid-column: 1 / 3;
+  }
+
+  .access_shop-wrap_desktop {
+    display: grid;
+  }
+
+  .acs-shp-1 {
+    align-self: end;
+  }
 
 
 
