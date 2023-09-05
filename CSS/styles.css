@@ -101,6 +101,7 @@ body {
   flex-direction: column;
 }
 
+.involved-container,
 .visit-container,
 .explore-container,
 .exhib-container,
@@ -148,6 +149,10 @@ nav,
   border-radius: 15px 0 0 15px;
 }
 
+.research-wrap,
+.intern-wrap,
+.volunteer-wrap,
+.support-wrap,
 .shop-wrap,
 .access_shop-wrap_desktop,
 .food-wrap,
@@ -178,6 +183,10 @@ nav,
   border-radius: 15px;
 }
 
+.research-wrap,
+.intern-wrap,
+.volunteer-wrap,
+.support-wrap,
 .shop-wrap,
 .food-wrap section,
 .accessibility-wrap,
@@ -201,6 +210,10 @@ nav,
   padding: 0 10px 45px 10px;
 }
 
+.research-wrap h2,
+.intern-wrap h2,
+.volunteer-wrap h2,
+.support-wrap h2,
 .shop-wrap h2,
 .access_shop-wrap_desktop h2,
 .food-wrap h2,
@@ -218,6 +231,7 @@ nav,
   margin: 40px 0 20px 0;
 }
 
+.involved-container h1,
 .visit-container h1,
 .explore-container h1,
 .energetica-heading-part-3,
@@ -260,7 +274,8 @@ h3,
 .kids-club-ad section div,
 .school-ad section,
 .explore-6-wrap section div,
-.explore-4-wrap section div {
+.explore-4-wrap section div,
+.volunteer-wrap div {
   text-align: center;
 }
 
@@ -332,7 +347,9 @@ h3,
 .explore-1-wrap p,
 .admission-wrap p,
 .accessibility-wrap p,
-.shop-wrap p {
+.shop-wrap p,
+.support-wrap p,
+.intern-wrap p {
   font-family: var(--font-michroma);
 }
 
@@ -353,7 +370,9 @@ h3,
 .explore-1-wrap p,
 .admission-wrap p,
 .accessibility-wrap p,
-.shop-wrap p {
+.shop-wrap p,
+.support-wrap p,
+.intern-wrap p {
   font-size: var(--size-16);
 }
 
@@ -389,6 +408,11 @@ h1 {
 .energetica-wrap section div,
 .cta-visit-wrap {
   display: flex;
+}
+
+.volunteer-wrap div,
+.energetica-wrap section div,
+.cta-visit-wrap {
   margin-top: 25px;
 }
 
@@ -426,10 +450,14 @@ h3,
 .explore-1-wrap,
 .admission-wrap,
 .accessibility-wrap,
-.shop-wrap {
+.shop-wrap,
+.support-wrap,
+.intern-wrap {
   color: var(--white-100);
 }
 
+.intern-wrap a,
+.support-wrap a,
 .active-page {
   color: var(--yellow-700);
 }
@@ -458,7 +486,9 @@ nav,
 .explore-1-wrap,
 .admission-wrap,
 .accessibility-wrap,
-.shop-wrap {
+.shop-wrap,
+.support-wrap,
+.intern-wrap {
   background: var(--black-100);
 }
 
@@ -482,6 +512,10 @@ nav,
   background-color: var(--white-400);
 }
 
+.research-wrap,
+.intern-wrap,
+.volunteer-wrap,
+.support-wrap,
 .shop-wrap,
 .access_shop-wrap_desktop,
 .food-wrap,
@@ -621,6 +655,7 @@ margin-top: 20px;
   gap: 7px;
 }
 
+.ftr-involve .logo-ftr-2,
 .ftr-visit .logo-ftr,
 .ftr-explore .logo-ftr-2,
 .ftr-exhib .logo-ftr-2,
@@ -763,7 +798,10 @@ gap: 20px;
 14. Get Involved
 ================
 */
-
+.involved-container {
+  display: grid;
+  gap: 20px;
+}
 
 
 /*
@@ -792,6 +830,10 @@ gap: 20px;
     padding: 0 20px;
   }
 
+  .support-wrap,
+  .volunteer-wrap,
+  .intern-wrap,
+  .research-wrap,
   .shop-wrap,
   .food-wrap section,
   .accessibility-wrap,
@@ -830,6 +872,10 @@ gap: 20px;
 }
 
   /* Colors */
+  .ftr-involve .fa-brands,
+  .ftr-involve .ftr-link,
+  .ftr-involve .fa-copyright,
+  .ftr-involve .logo-name-2,
   .ftr-explore .fa-brands,
   .ftr-explore .ftr-link,
   .ftr-explore .fa-copyright,
@@ -1182,6 +1228,8 @@ gap: 20px;
     color: var(--black-100);
   }
 
+  .support-wrap a:hover,
+  .intern-wrap a:hover,
   .ftr-link:hover,
   .fa-brands:hover,
   .menu-desktop a:hover { 
@@ -1430,6 +1478,24 @@ gap: 20px;
 
   .acs-shp-1 {
     align-self: end;
+  }
+
+  /* Get involved */
+  .involved-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .involved-container h1 {
+    grid-column: 1 / -1;
+  }
+
+  .volunteer-wrap {
+    grid-column: 2 / -1;
+  }
+
+  .intern-wrap {
+    grid-column: 1 / 3;
   }
 
 
