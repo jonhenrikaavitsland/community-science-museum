@@ -855,6 +855,9 @@ textarea,
   border: none;
 }
 
+.email {
+  word-break: break-word;
+}
 
 /*
 ===============
