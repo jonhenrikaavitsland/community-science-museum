@@ -434,6 +434,12 @@ a,
 ===========
 */
 
+.exp-6-wrp-p,
+.exp-5-wrp-p,
+.exp-4-wrp-p,
+.exp-3-wrp-p,
+.exp-2-wrp-p,
+.exp-1-wrp-p,
 .contact-wrap,
 .details-wrap,
 .research-wrap,
@@ -446,8 +452,6 @@ a,
 .hours-wrap section,
 .admission-wrap section,
 .location-wrap section,
-.explore-container :nth-child(2) section,
-.explore-container :nth-child(1) section,
 .ecology-wrap section,
 .robotics-wrap section,
 .biology-wrap section,
@@ -520,20 +524,20 @@ header {
   margin: 22px 0 3px 0;
 }
 
-.explore-6-wrap section div,
-.explore-4-wrap section div {
+.exp-6-wrp-p div,
+.exp-4-wrp-p div {
   margin: 30px 0 0 0;
 }
 
 .contact-1,
 .admission-wrap h2,
 .location-wrap h2,
-.explore-6-wrap section,
-.explore-5-wrap section,
-.explore-4-wrap section,
-.explore-3-wrap section,
-.explore-2-wrap section,
-.explore-1-wrap section,
+.exp-6-wrp-p,
+.exp-5-wrp-p,
+.exp-4-wrp-p,
+.exp-3-wrp-p,
+.exp-2-wrp-p,
+.exp-1-wrp-p,
 .energetica-wrap h2 {
   margin: 40px 0 0 0;
 }
@@ -752,8 +756,8 @@ h3,
 .energetica-wrap section :nth-child(3),
 .kids-club-ad section div,
 .school-ad section,
-.explore-6-wrap section div,
-.explore-4-wrap section div,
+.exp-6-wrp-p div,
+.exp-4-wrp-p div,
 .volunteer-wrap div,
 .details-wrap,
 .fa-backward {
@@ -927,7 +931,7 @@ textarea,
   .ftr-explore .ftr-link,
   .ftr-explore .fa-copyright,
   .ftr-explore .logo-name-2,
-  .explore-4-wrap section,
+  .exp-4-wrp-p,
   .exhib-container .energetica-wrap section,
   .robotics-wrap section,
   .school-ad section,
@@ -935,8 +939,8 @@ textarea,
     color: var(--white-100);
   }
 
-  .explore-5-wrap section,
-  .explore-3-wrap section,
+  .exp-5-wrp-p,
+  .exp-3-wrp-p,
   .ecology-wrap section,
   .biology-wrap section,
   .ftr-link,
@@ -970,10 +974,16 @@ textarea,
 
   /* Padding */
 
+  .exp-1-wrp-p,
   .school-ad section {
     padding: 0 20px;
   }
 
+  .exp-2-wrp-p,
+  .exp-3-wrp-p,
+  .exp-4-wrp-p,
+  .exp-5-wrp-p,
+  .exp-6-wrp-p,
   .exhibition-ad-tablet section,
   .contact-wrap,
   .support-wrap,
@@ -985,8 +995,6 @@ textarea,
   .accessibility-wrap,
   .admission-wrap section,
   .location-wrap section,
-  .explore-container :nth-child(2) section, 
-  .explore-container :nth-child(1) section,
   .ecology-wrap section,
   .robotics-wrap section,
   .biology-wrap section,
@@ -1097,7 +1105,6 @@ textarea,
   .robotics-wrap div,
   .explore-1-wrap div,
   .explore-1-wrap,
-  .explore-1-wrap section,
   .food-wrap div,
   .food-wrap {
     display: flex;
@@ -1112,7 +1119,6 @@ textarea,
   .robotics-wrap section,
   .robotics-wrap div,
   .explore-1-wrap div,
-  .explore-1-wrap section,
   .food-wrap div,
   .food-wrap section {
     flex: 1;
@@ -1140,7 +1146,7 @@ textarea,
     align-self: end;
   }
 
-  .explore-1-wrap section {
+  .exp-1-wrp-p {
     align-items: center;
   }
 
@@ -1161,6 +1167,7 @@ textarea,
     border-radius: 15px;
   }
 
+  .explore-1-wrap img,
   .food-wrap img,
   .ecology-wrap img,
   .robotics-wrap img,
@@ -1383,8 +1390,8 @@ textarea,
 
   /* Grid */
 
-  .explore-6-wrap section,
-  .explore-4-wrap section,
+  .exp-6-wrp-p,
+  .exp-4-wrp-p,
   .access_shop-wrap_desktop {
     display: grid;
   }
@@ -1465,9 +1472,9 @@ textarea,
 
   /* Flex */
   .menu-desktop,
-  .explore-6-wrap > div,
+  .exp-6-img,
   .explore-6-wrap,
-  .explore-4-wrap > div,
+  .exp-4-img,
   .explore-4-wrap {
     display: flex;
   }
@@ -1503,8 +1510,8 @@ textarea,
     gap: 40px;
   }
 
-  .explore-6-wrap section p,
-  .explore-4-wrap section p,
+  .exp-4-wrp-p p,
+  .exp-6-wrp-p p,
   .acs-shp-1 {
     align-self: end;
   }
