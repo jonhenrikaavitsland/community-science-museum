@@ -401,14 +401,6 @@ a,
   background: var(--linear-cta);
 }
 
-.cta-white:hover {
-  text-shadow: 0px 30px 4px var(--purple-500);
-}
-
-.cta-black:hover {
-  text-shadow: 0px 30px 4px var(--yellow-700);
-}
-
 .fa-duotone {
   --fa-primary-color: var(--black-100); 
   --fa-secondary-color: var(--yellow-700); 
@@ -1328,10 +1320,18 @@ textarea,
     text-shadow: 0px 20px 4px var(--purple-500);
   }  
 
+  .cta-white:hover {
+    text-shadow: 0px 30px 4px var(--purple-500);
+  }
+
   .ftr-link:hover,
   .fa-brands:hover,
   .menu-desktop a:hover { 
     text-shadow: 0px 20px 4px var(--yellow-400);
+  }
+
+  .cta-black:hover {
+    text-shadow: 0px 30px 4px var(--yellow-400);
   }
 
   #active-page-desktop {
