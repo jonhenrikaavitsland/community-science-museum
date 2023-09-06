@@ -1128,6 +1128,10 @@ textarea,
 
   /* Layout */
 
+  .ecology-wrap section {
+    gap: 20px;
+  }
+
   .exhibition-ad-tablet section a {
     align-self: start;
   }
@@ -1146,9 +1150,12 @@ textarea,
     justify-self: center;
   }
 
-  .ecology-wrap section,
   .robotics-wrap section {
     justify-content: space-around;
+  }
+
+  .ecology-wrap section {
+    justify-content: center;
   }
 
   .exhibition-ad-tablet section {
