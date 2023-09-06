@@ -1207,6 +1207,10 @@ textarea,
     display: block;
   }
 
+  .cosmology-wrap img {
+    content: url(/Assets/cosmos-space_desktop.jpg);
+  }
+
   /* Typography */
   .location-wrap p,
   .hours-wrap p,
