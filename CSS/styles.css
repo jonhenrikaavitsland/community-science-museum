@@ -129,6 +129,9 @@ main {
   display: none;
 }
 
+.cta-send {
+  cursor: pointer;
+}
 
 /*
 =============
@@ -845,6 +848,10 @@ textarea,
   border-radius: 50px;
 }
 
+.cta-send {
+  border: none;
+}
+
 
 /*
 ===============
@@ -1328,7 +1335,7 @@ textarea,
     text-shadow: 0px 20px 4px var(--purple-500);
   }  
 
-  .cta-white:hover {
+    .cta-white:hover {
     text-shadow: 0px 30px 4px var(--purple-500);
   }
 
