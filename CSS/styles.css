@@ -1368,10 +1368,11 @@ textarea,
   /* Image */
 
   .museum-ad {
+    background-image: url(/Assets/museum-ad_desktop.jpg);
     background-size: 100%;
     background-position-x: left;
     background-position-y: center;
-    height: 800px;
+    height: 900px;
   }
 
   .cosmology-wrap img {
