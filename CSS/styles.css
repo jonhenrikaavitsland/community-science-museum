@@ -114,6 +114,20 @@ main {
   padding: 20px 10px;
 }
 
+.menu-desktop,
+.ftr-contact .logo-ftr,
+.ftr-involve .logo-ftr-2,
+.ftr-visit .logo-ftr,
+.ftr-explore .logo-ftr-2,
+.ftr-exhib .logo-ftr-2,
+.ftr-home .logo-ftr-2,
+.school-cta-bl,
+.kids-cta-wh,
+.exhibition-ad-tablet,
+.exhibition-ad-desktop,
+.access_shop-wrap_desktop {
+  display: none;
+}
 
 
 /*
@@ -636,7 +650,7 @@ header {
 10. Flex
 ========
 */
-
+.hero-txt-wrap,
 .energetica-wrap section div,
 .cta-visit-wrap,
 .contact-wrap,
@@ -653,6 +667,8 @@ header div,
 .details-wrap {
   display: flex;
 }
+
+.hero-txt-wrap,
 .cta-visit-wrap,
 .contact-wrap,
 .contact-1,
@@ -676,6 +692,7 @@ header div,
   gap: 7px;
 }
 
+.hero-txt-wrap,
 .contact-wrap,
 .main-container,
 .explore-grid-2,
@@ -688,21 +705,6 @@ header div,
 .contact-container,
 .details-wrap {
   gap: 20px;
-}
-
-.menu-desktop,
-.ftr-contact .logo-ftr,
-.ftr-involve .logo-ftr-2,
-.ftr-visit .logo-ftr,
-.ftr-explore .logo-ftr-2,
-.ftr-exhib .logo-ftr-2,
-.ftr-home .logo-ftr-2,
-.school-cta-bl,
-.kids-cta-wh,
-.exhibition-ad-tablet,
-.exhibition-ad-desktop,
-.access_shop-wrap_desktop {
-  display: none;
 }
 
 .cta-send,
@@ -875,6 +877,22 @@ textarea,
 
 /* ////////// 600PX \\\\\\\\\\*/
 @media (min-width: 601px) {
+  /* Global */
+  .school-cta-wh,
+  .exhibitions-ad-mobile,
+  .ftr-exhib .logo-ftr,
+  .ftr-home .logo-ftr {
+    display: none;
+  }
+
+  .school-cta-bl,
+  .exhibition-ad-tablet,
+  .ftr-exhib .logo-ftr-2,
+  .ftr-home .logo-ftr-2 {
+    display: block;
+  }
+
+
   /* Typography */
   .ecology-wrap p,
   .biology-wrap p,
@@ -952,11 +970,11 @@ textarea,
 
   /* Padding */
 
-  .school-ad section,
-  .exhibition-ad-tablet section {
+  .school-ad section {
     padding: 0 20px;
   }
 
+  .exhibition-ad-tablet section,
   .contact-wrap,
   .support-wrap,
   .volunteer-wrap,
@@ -1019,7 +1037,7 @@ textarea,
   }
 
   .exhibition-ad-tablet section {
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 1fr 1fr;
   }
 
   .main-container,
@@ -1112,20 +1130,6 @@ textarea,
 
   /* Layout */
 
-  .school-cta-wh,
-  .exhibitions-ad-mobile,
-  .ftr-exhib .logo-ftr,
-  .ftr-home .logo-ftr {
-    display: none;
-  }
-
-  .school-cta-bl,
-  .exhibition-ad-tablet,
-  .ftr-exhib .logo-ftr-2,
-  .ftr-home .logo-ftr-2 {
-    display: block;
-  }
-
   .exhibition-ad-tablet section a {
     align-self: start;
   }
@@ -1169,6 +1173,33 @@ textarea,
 
 /* ////////// 1100PX \\\\\\\\\\ */
 @media (min-width: 1100px) {
+  /* Global */
+
+  .hamburger-icon,
+  .logo,
+  .ftr-contact .logo-ftr-2,
+  .ftr-visit .logo-ftr-2,
+  .ftr-explore .logo-ftr,
+  .ftr-home .logo-ftr-2,
+  .school-cta-bl,
+  .kids-cta-bl,
+  .exhibition-ad-tablet,
+  .shop-wrap,
+  .accessibility-wrap {
+    display: none;
+  }
+
+  .menu-desktop,
+  .ftr-contact .logo-ftr,
+  .ftr-visit .logo-ftr,
+  .ftr-explore .logo-ftr-2,
+  .ftr-home .logo-ftr,
+  .school-cta-wh,
+  .kids-cta-wh,
+  .exhibition-ad-desktop,
+  .robotics-wrap {
+    display: block;
+  }
 
   /* Typography */
   .location-wrap p,
@@ -1321,6 +1352,7 @@ textarea,
 
   /* Padding */
 
+  .night-wrap section,
   .exhibition-ad-desktop section {
     padding: 0 20px;
   }
@@ -1343,6 +1375,10 @@ textarea,
 
   .exhibition-ad-desktop section h3 {
     margin: 40px 0 40px 0;
+  }
+
+  .menu-desktop {
+    margin-left: 65px;
   }
 
   /* Grid */
@@ -1452,32 +1488,7 @@ textarea,
 
   /* Layout */
 
-  .hamburger-icon,
-  .logo,
-  .ftr-contact .logo-ftr-2,
-  .ftr-visit .logo-ftr-2,
-  .ftr-explore .logo-ftr,
-  .ftr-home .logo-ftr-2,
-  .school-cta-bl,
-  .kids-cta-bl,
-  .exhibition-ad-tablet,
-  .shop-wrap,
-  .accessibility-wrap {
-    display: none;
-  }
-
-  .menu-desktop,
-  .ftr-contact .logo-ftr,
-  .ftr-visit .logo-ftr,
-  .ftr-explore .logo-ftr-2,
-  .ftr-home .logo-ftr,
-  .school-cta-wh,
-  .kids-cta-wh,
-  .exhibition-ad-desktop,
-  .robotics-wrap {
-    display: block;
-  }
-
+  .hero-txt-wrap,
   .visit-container,
   .main-container,
   .exhib-container,
