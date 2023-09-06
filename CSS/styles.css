@@ -320,7 +320,8 @@ nav,
 .shop-wrap,
 .support-wrap,
 .intern-wrap,
-.details-wrap {
+.details-wrap,
+.museum-ad h3 {
   background: var(--black-100);
 }
 
