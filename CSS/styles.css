@@ -8,7 +8,7 @@ Table of Contents
 3.  Hamburger
 4.  Typography
 5.  Color
-6.  Background Image
+6.  Image
 7.  Padding
 8.  Margin
 9.  Grid
@@ -408,9 +408,9 @@ a,
 }
 
 /*
-====================
-6. Background Image
-====================
+========
+6. Image
+========
 */
 
 .museum-ad {
@@ -1207,9 +1207,6 @@ textarea,
     display: block;
   }
 
-  .cosmology-wrap img {
-    content: url(/Assets/cosmos-space_desktop.jpg);
-  }
 
   /* Typography */
   .location-wrap p,
@@ -1359,13 +1356,25 @@ textarea,
     transition: 0.3s;
   }
 
-  /* Background image */
+  /* Image */
 
   .museum-ad {
     background-size: 100%;
     background-position-x: left;
     background-position-y: center;
     height: 800px;
+  }
+
+  .cosmology-wrap img {
+    content: url(/Assets/cosmos-space_desktop.jpg);
+  }
+
+  .robotics-wrap img {
+    content: url(/Assets/robotic-ai_desktop.jpg);
+  }
+
+  .explore-4-wrap img {
+    content: url(/Assets/3d-glasses_desktop.jpg);
   }
 
   /* Padding */
