@@ -3,6 +3,12 @@
 10. Flex
 ========
 */
+.intern-wrap div,
+.volunteer-info,
+.support-wrap div,
+.biology-wrap section div,
+.evolution-wrap section div,
+.cosmology-wrap section div,
 .hero-txt-wrap,
 .energetica-wrap section div,
 .cta-visit-wrap,
@@ -21,6 +27,12 @@ header div,
   display: flex;
 }
 
+.intern-wrap div,
+.volunteer-info,
+.support-wrap div,
+.biology-wrap section div,
+.evolution-wrap section div,
+.cosmology-wrap section div,
 .hero-txt-wrap,
 .cta-visit-wrap,
 .contact-wrap,
