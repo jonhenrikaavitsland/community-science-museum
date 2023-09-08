@@ -847,6 +847,10 @@ textarea,
   border-radius: 15px 15px 0 0;
 }
 
+nav {
+  border-radius: 0 0 0 15px;
+}
+
 .cta {
   border-radius: 50px;
 }
