@@ -1,0 +1,11 @@
+/*
+========
+6. Image
+========
+*/
+
+.museum-ad {
+  background-image: url(../Assets/museum-tablet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

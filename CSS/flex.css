@@ -1,0 +1,35 @@
+/*
+========
+10. Flex
+========
+*/
+.hero-txt-wrap,
+.energetica-wrap section div,
+.cta-visit-wrap,
+.contact-wrap,
+.contact-1,
+.contact-2,
+.contact-3,
+.contact-4,
+textarea,
+header div,
+.socials,
+.link-wrap,
+.ftr-logo,
+.copy-wrap,
+.details-wrap {
+  display: flex;
+}
+
+.hero-txt-wrap,
+.cta-visit-wrap,
+.contact-wrap,
+.contact-1,
+.contact-2,
+.contact-3,
+.contact-4,
+header div,
+.link-wrap,
+.details-wrap {
+  flex-direction: column;
+}

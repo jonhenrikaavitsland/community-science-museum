@@ -1,0 +1,69 @@
+/*
+===========
+7. Padding
+===========
+*/
+
+.exp-6-wrp-p,
+.exp-5-wrp-p,
+.exp-4-wrp-p,
+.exp-3-wrp-p,
+.exp-2-wrp-p,
+.exp-1-wrp-p,
+.contact-wrap,
+.details-wrap,
+.research-wrap,
+.intern-wrap,
+.volunteer-wrap,
+.support-wrap,
+.shop-wrap,
+.food-wrap section,
+.accessibility-wrap,
+.hours-wrap section,
+.admission-wrap section,
+.location-wrap section,
+.ecology-wrap section,
+.robotics-wrap section,
+.biology-wrap section,
+.evolution-wrap section,
+.cosmology-wrap section,
+.kids-club-ad section,
+.energetica-wrap section,
+.night-wrap section,
+.prof-wrap section,
+.exhibitions-ad-mobile section,
+.hero-txt,
+.school-ad section {
+  padding: 0 10px 45px 10px;
+}
+
+.contact-1 input,
+.contact-2 input,
+.contact-3 input {
+  padding: 0 15px;
+}
+
+.contact-wrap a {
+  padding: 5px;
+}
+
+.cta-send,
+.contact,
+.visit,
+.explore,
+.learn,
+.readmore {
+  padding: 8px 16px;
+}
+
+textarea {
+  padding: 15px 15px;
+}
+
+.details-wrap {
+  padding-top: 40px;
+}
+
+header {
+  padding-bottom: 30px;
+}

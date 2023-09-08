@@ -1,0 +1,310 @@
+/*
+=================
+13. @media tablet
+=================
+*/
+
+/* ////////// 600PX \\\\\\\\\\*/
+@media (min-width: 601px) {
+  /* Global */
+  .school-cta-wh,
+  .exhibitions-ad-mobile,
+  .ftr-exhib .logo-ftr,
+  .ftr-home .logo-ftr {
+    display: none;
+  }
+
+  .school-cta-bl,
+  .exhibition-ad-tablet,
+  .ftr-exhib .logo-ftr-2,
+  .ftr-home .logo-ftr-2 {
+    display: block;
+  }
+
+
+  /* Typography */
+  .ecology-wrap p,
+  .biology-wrap p,
+  .explore-3-wrap p,
+  .explore-5-wrap p {
+    font-family: var(--font-gruppo);
+  }
+
+  .explore-4-wrap p,
+  .exhib-container .energetica-wrap p,
+  .robotics-wrap p {
+    font-family: var(--font-michroma);
+    font-size: var(--size-16);
+  }
+
+  .explore-5-wrap p,
+  .explore-3-wrap p,
+  .exhib-container .energetica-wrap .energetica-heading-part-2,
+  .exhib-container .energetica-wrap .energetica-heading-part-3,
+  .ecology-wrap p,
+  .biology-wrap p {
+    font-size: var(--size-21);
+  }
+
+
+  /* Colors */
+  .ftr-involve .fa-brands,
+  .ftr-involve .ftr-link,
+  .ftr-involve .fa-copyright,
+  .ftr-involve .logo-name-2,
+  .ftr-explore .fa-brands,
+  .ftr-explore .ftr-link,
+  .ftr-explore .fa-copyright,
+  .ftr-explore .logo-name-2,
+  .exp-4-wrp-p,
+  .exhib-container .energetica-wrap section,
+  .robotics-wrap section,
+  .school-ad section,
+  .school-ad h3 {
+    color: var(--white-100);
+  }
+
+  .exp-5-wrp-p,
+  .exp-3-wrp-p,
+  .ecology-wrap section,
+  .biology-wrap section,
+  .ftr-link,
+  .logo-name-2,
+  .fa-copyright,
+  .fa-brands {
+    color: var(--black-100);
+  }
+
+  .ftr-explore,
+  .explore-4-wrap,
+  .exhib-container .energetica-wrap,
+  .robotics-wrap,
+  .exhibition-ad-tablet,
+  .school-ad {
+    background: var(--black-100);
+  }
+
+  .explore-5-wrap,
+  .explore-3-wrap,
+  .ecology-wrap,
+  .biology-wrap {
+    background: var(--white-100);
+  }
+
+  .ftr-exhib,
+  .ftr-home {
+    background-color: var(--white-400);
+  }
+
+
+  /* Padding */
+
+  .exp-1-wrp-p,
+  .school-ad section {
+    padding: 0 20px;
+  }
+
+  .exp-2-wrp-p,
+  .exp-3-wrp-p,
+  .exp-4-wrp-p,
+  .exp-5-wrp-p,
+  .exp-6-wrp-p,
+  .exhibition-ad-tablet section,
+  .contact-wrap,
+  .support-wrap,
+  .volunteer-wrap,
+  .intern-wrap,
+  .research-wrap,
+  .shop-wrap,
+  .food-wrap section,
+  .accessibility-wrap,
+  .admission-wrap section,
+  .location-wrap section,
+  .ecology-wrap section,
+  .robotics-wrap section,
+  .biology-wrap section,
+  .evolution-wrap section,
+  .cosmology-wrap section,
+  .kids-club-ad section,
+  .energetica-wrap section,
+  .night-wrap section,
+  .prof-wrap section,
+  .hero-txt {
+    padding: 0 20px 60px 20px;
+  }
+
+  main {
+    padding: 20px 20px;
+  }
+
+  .details-wrap {
+    padding: 60px 20px;
+  }
+
+
+  /* Margin */
+
+  .cta-visit-wrap,
+  .exhibition-ad-tablet section a {
+    margin-top: 40px;
+  }
+
+  /* Grid */
+
+  .night-wrap section,
+  .exhibition-ad-tablet section,
+  .food-wrap section {
+    display: grid;
+  }
+
+  .visit-container {
+    grid-template-rows: repeat(5, min-content);
+  }
+
+  .exhib-container {
+    grid-template-rows: repeat(6, min-content);
+  }
+
+  .main-container {
+    grid-template-rows: 120vw repeat(6, min-content);
+  }
+
+  .exhibition-ad-tablet section {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .main-container,
+  .exhib-container,
+  .visit-container,
+  .explore-grid-2,
+  .explore-grid-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .exhibition-ad-tablet,
+  .energetica-wrap,
+  .night-wrap,
+  .prof-wrap,
+  .hero-txt,
+  .museum-ad,
+  .ecology-wrap,
+  .robotics-wrap,
+  .cosmology-wrap,
+  .exhib-container h1,
+  .explore-container h2,
+  .explore-4-wrap,
+  .explore-1-wrap,
+  .explore-container h1,
+  .food-wrap,
+  .admission-wrap,
+  .visit-container h1 {
+    grid-column: 1 / -1;
+  }
+
+  .hours-wrap {
+    grid-row: 2 / 3;
+    grid-column: 2 / -1;
+  }
+
+  .exhibition-ad-tablet {
+    grid-row: 3 / 4;
+  }
+
+  .accessibility-wrap {
+    grid-row: 5 / -1;
+  }
+
+
+  /* Flex */
+
+  .cta-visit-wrap,
+  .night-wrap,
+  .night-wrap div,
+  .exhibition-ad-tablet,
+  .exhibition-ad-tablet div,
+  .ecology-wrap section,
+  .ecology-wrap,
+  .ecology-wrap div,
+  .robotics-wrap section,
+  .robotics-wrap,
+  .robotics-wrap div,
+  .explore-1-wrap div,
+  .explore-1-wrap,
+  .food-wrap div,
+  .food-wrap {
+    display: flex;
+  }
+
+  .night-wrap section,
+  .night-wrap div,
+  .exhibition-ad-tablet section,
+  .exhibition-ad-tablet div,
+  .ecology-wrap section,
+  .ecology-wrap div,
+  .robotics-wrap section,
+  .robotics-wrap div,
+  .explore-1-wrap div,
+  .food-wrap div,
+  .food-wrap section {
+    flex: 1;
+  }
+
+  .ecology-wrap section,
+  .robotics-wrap section {
+    flex-direction: column;
+  }
+
+  .exhibition-ad-tablet {
+    flex-direction: row;
+  }
+
+
+  /* Layout */
+
+  .ecology-wrap section {
+    gap: 20px;
+  }
+
+  .exhibition-ad-tablet section a {
+    align-self: start;
+  }
+
+  .night-wrap h2,
+  .exhibition-ad-tablet section h3,
+  .food-wrap h2 {
+    align-self: end;
+  }
+
+  .exp-1-wrp-p {
+    align-items: center;
+  }
+
+  .exhibition-ad-tablet section a {
+    justify-self: center;
+  }
+
+  .robotics-wrap section {
+    justify-content: space-around;
+  }
+
+  .ecology-wrap section {
+    justify-content: center;
+  }
+
+  .exhibition-ad-tablet section {
+    text-align: center;
+  }
+
+  .exhibition-ad-tablet {
+    border-radius: 15px;
+  }
+
+  .explore-1-wrap img,
+  .food-wrap img,
+  .ecology-wrap img,
+  .robotics-wrap img,
+  .night-wrap img {
+    border-radius: 15px 0 0 15px;
+  }
+
+}

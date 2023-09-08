@@ -1,0 +1,81 @@
+/*
+=================
+2.  Global Styles
+=================
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--white-400);
+  color:var(--black-100);
+  font-weight: var(--weight-400);
+  font-family: var(--font-gruppo);
+  font-size: var(--size-21);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contact-container,
+.involved-container,
+.visit-container,
+.explore-container,
+.exhib-container,
+.main-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+main {
+  flex: 1;
+  padding: 20px 10px;
+}
+
+.hide-me,
+.social-link,
+.menu-desktop,
+.ftr-contact .logo-ftr,
+.ftr-involve .logo-ftr-2,
+.ftr-visit .logo-ftr,
+.ftr-explore .logo-ftr-2,
+.ftr-exhib .logo-ftr-2,
+.ftr-home .logo-ftr-2,
+.school-cta-bl,
+.kids-cta-wh,
+.exhibition-ad-tablet,
+.exhibition-ad-desktop,
+.access_shop-wrap_desktop {
+  display: none;
+}
+
+.cta-send {
+  cursor: pointer;
+}

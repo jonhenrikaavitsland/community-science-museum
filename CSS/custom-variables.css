@@ -1,0 +1,31 @@
+/*
+====================
+1.  Custom Variables
+====================
+*/
+
+:root {
+  --black-100: #000;
+  --white-100: #fff;
+  --white-400: #f9f9f9;
+  --yellow-100: #fefef5;
+  --yellow-400: #fffdd8;
+  --yellow-700: #d8d254;
+  --purple-500: #804FBF;
+
+  --linear-cta: linear-gradient(180deg, #D8D254 36.98%, #FFF 45.83%, #D8D254 65.10%);
+
+  --font-michroma: 'Michroma', sans-serif;
+  --font-gruppo: 'Gruppo', sans-serif;
+  --font-lucky: 'Luckiest Guy', cursive;
+  --font-russo: 'Russo One', sans-serif;
+
+  --weight-400: 400;
+
+  --size-16: 1rem;
+  --size-21: 1.3125rem;
+  --size-27: 1.6875rem;
+
+  --height: 1.5;
+  
+}

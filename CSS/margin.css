@@ -1,0 +1,97 @@
+/*
+==========
+8. Margin
+==========
+*/
+
+.contact-container h1,
+.involved-container h1,
+.visit-container h1,
+.explore-container h1,
+.energetica-heading-part-3,
+#heading-title {
+  margin: 0 0 40px 0;
+}
+
+.logo-ftr-2,
+.logo-ftr {
+  margin: 17px 0 11px 0;
+}
+
+.logo-2,
+.logo {
+  margin: 22px 0 3px 0;
+}
+
+.exp-6-wrp-p div,
+.exp-4-wrp-p div {
+  margin: 30px 0 0 0;
+}
+
+.contact-1,
+.admission-wrap h2,
+.location-wrap h2,
+.exp-6-wrp-p,
+.exp-5-wrp-p,
+.exp-4-wrp-p,
+.exp-3-wrp-p,
+.exp-2-wrp-p,
+.exp-1-wrp-p,
+.energetica-wrap h2 {
+  margin: 40px 0 0 0;
+}
+
+.research-wrap h2,
+.intern-wrap h2,
+.volunteer-wrap h2,
+.support-wrap h2,
+.shop-wrap h2,
+.access_shop-wrap_desktop h2,
+.food-wrap h2,
+.accessibility-wrap h2,
+.hours-wrap h2,
+.ecology-wrap h2,
+.robotics-wrap h2,
+.biology-wrap h2,
+.evolution-wrap h2,
+.cosmology-wrap h2,
+.prof-wrap h2,
+.exhibitions-ad-mobile section h3,
+.hero-txt h1,
+.kids-club-ad h3 {
+  margin: 40px 0 20px 0;
+}
+
+.explore-container h2 {
+  margin: 80px 0 30px 0;
+}
+
+.socials,
+.link-wrap,
+.school-ad section p,
+.prof-wrap section :nth-child(3),
+.hours-wrap section > p {
+  margin-top: 20px;
+}
+
+.volunteer-wrap div,
+.energetica-wrap section div,
+.cta-visit-wrap {
+  margin-top: 25px;
+}
+
+.kids-club-ad section div,
+.school-ad section div {
+  margin-top: 30px;
+}
+
+.school-ad h3,
+.energetica-wrap h2,
+.night-wrap h2 {
+  margin-top: 40px;
+}
+
+.energetica-wrap section :nth-child(3),
+.night-wrap section :nth-child(2) {
+  margin-bottom: 20px;
+}

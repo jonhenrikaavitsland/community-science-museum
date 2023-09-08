@@ -1,0 +1,74 @@
+/*
+==============
+4.  Typography
+==============
+*/
+
+.logo-name-1,
+.logo-name-2 {
+  font-family: var(--font-lucky);
+}
+
+.slogan,
+nav,
+.ftr-link,
+h1,
+h2,
+h3,
+.prof-p,
+.night-wrap p,
+.energetica-wrap section :nth-child(2),
+.energetica-wrap section :nth-child(3),
+.kids-club-ad p,
+.school-ad p,
+.cosmology-wrap p,
+.biology-wrap p,
+.ecology-wrap p,
+.explore-5-wrap p,
+.explore-3-wrap p,
+.explore-1-wrap p,
+.admission-wrap p,
+.accessibility-wrap p,
+.shop-wrap p,
+.support-wrap p,
+.intern-wrap p,
+.details-wrap p {
+  font-family: var(--font-michroma);
+}
+
+.cta {
+  font-family: var(--font-russo);
+  text-transform: uppercase;
+}
+
+::placeholder,
+.slogan,
+.night-wrap section :nth-child(3),
+.cta,
+.kids-club-ad p,
+.cosmology-wrap p,
+.biology-wrap p,
+.ecology-wrap p,
+.explore-5-wrap p,
+.explore-3-wrap p,
+.explore-1-wrap p,
+.admission-wrap p,
+.accessibility-wrap p,
+.shop-wrap p,
+.support-wrap p,
+.intern-wrap p,
+.details-wrap p {
+  font-size: var(--size-16);
+}
+
+label,
+.hero-txt h1 {
+  font-size: var(--size-21);
+}
+
+.contact-wrap a,
+.explore-container h2,
+.fa-brands,
+h1 {
+  font-size: var(--size-27);
+}

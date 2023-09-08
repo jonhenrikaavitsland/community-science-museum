@@ -1,0 +1,49 @@
+/*
+========
+9. Grid
+========
+*/
+
+.main-container,
+.museum-ad,
+.explore-grid-2,
+.explore-grid-1,
+.exhib-container,
+.hours-wrap section div,
+.admission-wrap section,
+.location-wrap section,
+.visit-container,
+.involved-container,
+.contact-container {
+  display: grid;
+}
+
+.exhib-container,
+.visit-container {
+  grid-template-rows: repeat(7, min-content);
+}
+
+.main-container {
+  grid-template-rows: 120vw repeat(7, min-content);
+}
+
+.museum-ad {
+  grid-template-rows: 70% 15% 15%;
+}
+
+.hours-wrap section div {
+  grid-template-columns: 1fr 1fr;
+}
+
+.museum-ad {
+  grid-row: 1 / 2;
+}
+
+.museum-ad h3 {
+  grid-row: 2 / 3;
+}
+
+.exhibitions-ad-mobile,
+.museum-ad div {
+  grid-row: 3 / -1;
+}

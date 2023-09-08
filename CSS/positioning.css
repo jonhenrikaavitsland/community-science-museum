@@ -1,0 +1,17 @@
+/*
+===============
+12. Positioning
+===============
+*/
+
+.logo-wrap {
+  position: relative;
+}
+
+.slogan {
+  position: absolute;
+}
+
+.slogan {
+  bottom: -17px;
+}

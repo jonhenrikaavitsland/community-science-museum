@@ -1,0 +1,178 @@
+/*
+==========
+11. Layout
+==========
+*/
+
+.copy-wrap {
+  gap: 7px;
+}
+
+.hero-txt-wrap,
+.contact-wrap,
+.main-container,
+.explore-grid-2,
+.explore-grid-1,
+.exhib-container,
+.admission-wrap section,
+.location-wrap section,
+.visit-container,
+.involved-container,
+.contact-container,
+.details-wrap {
+  gap: 20px;
+}
+
+.cta-send,
+.contact-wrap a,
+.museum-ad h3 {
+  align-self: center;
+}
+
+textarea {
+  align-items: start;
+}
+
+.cta-visit-wrap,
+header div,
+.copy-wrap,
+.hours-wrap section div {
+  align-items: center;
+}
+
+.energetica-wrap section div,
+.ftr-logo,
+.copy-wrap {
+  justify-content: center;
+}
+
+.socials {
+  justify-content: space-evenly;
+}
+
+.prof-p,
+.logo-name-1,
+.logo-name-2,
+.slogan,
+.link-wrap,
+.socials,
+h1,
+h2,
+h3,
+.cta,
+.museum-ad div,
+.exhibitions-ad-mobile section,
+.exhibition-ad-desktop section,
+.night-wrap section :nth-child(2),
+.energetica-wrap section :nth-child(2),
+.energetica-wrap section :nth-child(3),
+.kids-club-ad section div,
+.school-ad section,
+.exp-6-wrp-p div,
+.exp-4-wrp-p div,
+.volunteer-wrap div,
+.details-wrap,
+.fa-backward {
+  text-align: center;
+}
+
+.contact-1 input,
+.contact-2 input,
+.contact-3 input {
+  height: 50px;
+}
+
+.logo-2,
+.logo,
+.logo-ftr-2,
+.logo-ftr {
+  width: 88px;
+  height: 100px;
+}
+
+textarea {
+  height: 200px;
+}
+
+input,
+textarea,
+.contact-wrap,
+.details-wrap,
+.research-wrap,
+.intern-wrap,
+.volunteer-wrap,
+.support-wrap,
+.shop-wrap,
+.access_shop-wrap_desktop,
+.food-wrap,
+.accessibility-wrap,
+.hours-wrap,
+.admission-wrap,
+.location-wrap,
+.explore-6-wrap,
+.explore-5-wrap,
+.explore-4-wrap,
+.explore-3-wrap,
+.explore-2-wrap,
+.explore-1-wrap,
+.ecology-wrap,
+.robotics-wrap,
+.biology-wrap,
+.evolution-wrap,
+.cosmology-wrap,
+.energetica-wrap,
+.night-wrap,
+.prof-wrap,
+.museum-ad,
+.hero-txt,
+.exhibitions-ad-mobile,
+.exhibition-ad-desktop,
+.kids-club-ad,
+.school-ad {
+  border-radius: 15px;
+}
+
+.exhibition-ad-tablet img {
+  border-radius: 15px 0 0 15px;
+}
+
+.food-wrap img,
+.hours-wrap img,
+.admission-wrap img,
+.location-wrap img,
+.explore-6-wrap img,
+.explore-5-wrap img,
+.explore-4-wrap img,
+.explore-3-wrap img,
+.explore-2-wrap img,
+.explore-1-wrap img,
+.ecology-wrap img,
+.robotics-wrap img,
+.biology-wrap img,
+.evolution-wrap img,
+.cosmology-wrap img,
+.night-wrap img,
+.prof-wrap img,
+.exhibitions-ad-mobile img,
+.exhibition-ad-desktop img,
+.energetica-wrap img,
+.kids-club-ad img,
+.school-ad img {
+  border-radius: 15px 15px 0 0;
+}
+
+nav {
+  border-radius: 0 0 0 15px;
+}
+
+.cta {
+  border-radius: 50px;
+}
+
+.cta-send {
+  border: none;
+}
+
+.email {
+  word-break: break-word;
+}
