@@ -372,6 +372,10 @@
     max-width: 1100px;
   }
 
+  .robotics-wrap img {
+    border-radius: 15px 15px 0 0;
+  }
+
   .explore-6-wrap img,
   .explore-4-wrap img,
   .explore-1-wrap img {
