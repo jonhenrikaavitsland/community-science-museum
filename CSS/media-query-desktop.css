@@ -44,7 +44,8 @@
   .ecology-wrap p,
   .prof-wrap section :nth-child(2),
   .menu-desktop,
-  .evolution-wrap section p {
+  .evolution-wrap section p,
+  .volunteer-info p {
     font-family: var(--font-michroma);
     font-size: var(--size-16);
     }
@@ -52,7 +53,8 @@
   .details-wrap p,
   .explore-4-wrap p,
   .robotics-wrap p,
-  .kids-club-ad p {
+  .kids-club-ad p,
+  .intern-wrap div p {
     font-family: var(--font-gruppo);
     font-size: var(--size-21);
   }
@@ -77,7 +79,8 @@
   .ecology-wrap section,
   .location-wrap,
   .hours-wrap,
-  .evolution-wrap {
+  .evolution-wrap,
+  .volunteer-wrap {
     color: var(--white-100);
   }
 
@@ -95,7 +98,8 @@
   .kids-club-ad p,
   .kids-club-ad h3,
   .school-ad h3,
-  .school-ad section {
+  .school-ad section,
+  .intern-wrap {
     color: var(--black-100);
   }
 
@@ -114,15 +118,21 @@
   .ftr-explore .fa-brands:hover,
   .ftr-explore .ftr-link:hover,
   .ftr-exhib .ftr-link:hover,
-  .ftr-exhib .fa-brands:hover {
+  .ftr-exhib .fa-brands:hover,
+  .intern-wrap a {
     color: var(--purple-500);
   } 
+
+  .intern-wrap a:hover {
+    color: var(--purple-300)
+  }
 
   .details-wrap,
   .explore-4-wrap,
   .robotics-wrap,
   .kids-club-ad,
-  .school-ad {
+  .school-ad,
+  .intern-wrap {
     background: var(--white-100);
   }
 
@@ -147,7 +157,8 @@
   .ftr-home,
   .prof-wrap,
   .ecology-wrap,
-  .evolution-wrap {
+  .evolution-wrap,
+  .volunteer-wrap {
     background: var(--black-100);
   }
 
