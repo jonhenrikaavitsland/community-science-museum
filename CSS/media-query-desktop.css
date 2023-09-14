@@ -43,7 +43,8 @@
   .explore-2-wrap p,
   .ecology-wrap p,
   .prof-wrap section :nth-child(2),
-  .menu-desktop {
+  .menu-desktop,
+  .evolution-wrap section p {
     font-family: var(--font-michroma);
     font-size: var(--size-16);
     }
@@ -75,7 +76,8 @@
   .prof-wrap,
   .ecology-wrap section,
   .location-wrap,
-  .hours-wrap {
+  .hours-wrap,
+  .evolution-wrap {
     color: var(--white-100);
   }
 
@@ -144,7 +146,8 @@
   .explore-2-wrap,
   .ftr-home,
   .prof-wrap,
-  .ecology-wrap {
+  .ecology-wrap,
+  .evolution-wrap {
     background: var(--black-100);
   }
 
