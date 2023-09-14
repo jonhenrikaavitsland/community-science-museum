@@ -14,8 +14,6 @@
   .ftr-visit .logo-ftr-2,
   .ftr-explore .logo-ftr,
   .ftr-home .logo-ftr-2,
-  .school-cta-bl,
-  .kids-cta-bl,
   .shop-wrap,
   .accessibility-wrap {
     display: none;
@@ -26,8 +24,6 @@
   .ftr-visit .logo-ftr,
   .ftr-explore .logo-ftr-2,
   .ftr-home .logo-ftr,
-  .school-cta-wh,
-  .kids-cta-wh,
   .robotics-wrap {
     display: block;
   }
