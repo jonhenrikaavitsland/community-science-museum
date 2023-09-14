@@ -8,14 +8,12 @@
 @media (min-width: 601px) {
   /* Global */
   .school-cta-wh,
-  .exhibitions-ad-mobile,
   .ftr-exhib .logo-ftr,
   .ftr-home .logo-ftr {
     display: none;
   }
 
   .school-cta-bl,
-  .exhibition-ad-tablet,
   .ftr-exhib .logo-ftr-2,
   .ftr-home .logo-ftr-2 {
     display: block;
@@ -79,7 +77,6 @@
   .explore-4-wrap,
   .exhib-container .energetica-wrap,
   .robotics-wrap,
-  .exhibition-ad-tablet,
   .school-ad {
     background: var(--black-100);
   }
@@ -109,7 +106,6 @@
   .exp-4-wrp-p,
   .exp-5-wrp-p,
   .exp-6-wrp-p,
-  .exhibition-ad-tablet section,
   .contact-wrap,
   .support-wrap,
   .volunteer-wrap,
@@ -129,7 +125,8 @@
   .energetica-wrap section,
   .night-wrap section,
   .prof-wrap section,
-  .hero-txt {
+  .hero-txt,
+  .exhibitions-ad section {
     padding: 0 20px 60px 20px;
   }
 
@@ -144,15 +141,14 @@
 
   /* Margin */
 
-  .cta-visit-wrap,
-  .exhibition-ad-tablet section a {
+  .cta-visit-wrap {
     margin-top: 40px;
   }
 
   /* Grid */
 
+  .exhibitions-ad section,
   .night-wrap section,
-  .exhibition-ad-tablet section,
   .food-wrap section {
     display: grid;
   }
@@ -169,10 +165,6 @@
     grid-template-rows: 120vw repeat(6, min-content);
   }
 
-  .exhibition-ad-tablet section {
-    grid-template-rows: 1fr 1fr;
-  }
-
   .main-container,
   .exhib-container,
   .visit-container,
@@ -181,7 +173,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .exhibition-ad-tablet,
+  .exhibition-ad section {
+    grid-template-rows: 1fr 1fr;
+  }
+
   .energetica-wrap,
   .night-wrap,
   .prof-wrap,
@@ -197,7 +192,8 @@
   .explore-container h1,
   .food-wrap,
   .admission-wrap,
-  .visit-container h1 {
+  .visit-container h1
+  .exhibitions-ad {
     grid-column: 1 / -1;
   }
 
@@ -206,8 +202,8 @@
     grid-column: 2 / -1;
   }
 
-  .exhibition-ad-tablet {
-    grid-row: 3 / 4;
+  .exhibitions-ad {
+    grid-column: 1 / -1;
   }
 
   .accessibility-wrap {
@@ -220,8 +216,6 @@
   .cta-visit-wrap,
   .night-wrap,
   .night-wrap div,
-  .exhibition-ad-tablet,
-  .exhibition-ad-tablet div,
   .ecology-wrap section,
   .ecology-wrap,
   .ecology-wrap div,
@@ -231,21 +225,23 @@
   .explore-1-wrap div,
   .explore-1-wrap,
   .food-wrap div,
-  .food-wrap {
+  .food-wrap,
+  .exhibitions-ad,
+  .exhibitions-ad div {
     display: flex;
   }
 
   .night-wrap section,
   .night-wrap div,
-  .exhibition-ad-tablet section,
-  .exhibition-ad-tablet div,
   .ecology-wrap section,
   .ecology-wrap div,
   .robotics-wrap section,
   .robotics-wrap div,
   .explore-1-wrap div,
   .food-wrap div,
-  .food-wrap section {
+  .food-wrap section,
+  .exhibitions-ad section,
+  .exhibitions-ad div {
     flex: 1;
   }
 
@@ -254,7 +250,7 @@
     flex-direction: column;
   }
 
-  .exhibition-ad-tablet {
+  .exhibitions-ad {
     flex-direction: row;
   }
 
@@ -265,13 +261,13 @@
     gap: 20px;
   }
 
-  .exhibition-ad-tablet section a {
+  .exhibitions-ad section div {
     align-self: start;
   }
 
   .night-wrap h2,
-  .exhibition-ad-tablet section h3,
-  .food-wrap h2 {
+  .food-wrap h2,
+  .exhibitions-ad section h3 {
     align-self: end;
   }
 
@@ -279,32 +275,31 @@
     align-items: center;
   }
 
-  .exhibition-ad-tablet section a {
-    justify-self: center;
-  }
-
   .robotics-wrap section {
     justify-content: space-around;
   }
 
+  .exhibitions-ad section div,
   .ecology-wrap section {
     justify-content: center;
   }
 
-  .exhibition-ad-tablet section {
+  .exhibitions-ad section {
     text-align: center;
-  }
-
-  .exhibition-ad-tablet {
-    border-radius: 15px;
   }
 
   .explore-1-wrap img,
   .food-wrap img,
   .ecology-wrap img,
   .robotics-wrap img,
-  .night-wrap img {
+  .night-wrap img,
+  .exhibitions-ad img {
     border-radius: 15px 0 0 15px;
   }
+
+  /* img */
+.exhibitions-ad img{
+  content: url(../Assets/exhibition-ad-tablet.jpg);
+}
 
 }

@@ -67,8 +67,7 @@ h2,
 h3,
 .cta,
 .museum-ad div,
-.exhibitions-ad-mobile section,
-.exhibition-ad-desktop section,
+.exhibitions-ad section,
 .night-wrap section :nth-child(2),
 .energetica-wrap section :nth-child(2),
 .energetica-wrap section :nth-child(3),
@@ -131,15 +130,10 @@ textarea,
 .prof-wrap,
 .museum-ad,
 .hero-txt,
-.exhibitions-ad-mobile,
-.exhibition-ad-desktop,
+.exhibitions-ad,
 .kids-club-ad,
 .school-ad {
   border-radius: 15px;
-}
-
-.exhibition-ad-tablet img {
-  border-radius: 15px 0 0 15px;
 }
 
 .food-wrap img,
@@ -159,8 +153,7 @@ textarea,
 .cosmology-wrap img,
 .night-wrap img,
 .prof-wrap img,
-.exhibitions-ad-mobile img,
-.exhibition-ad-desktop img,
+.exhibitions-ad img,
 .energetica-wrap img,
 .kids-club-ad img,
 .school-ad img {

@@ -16,7 +16,6 @@
   .ftr-home .logo-ftr-2,
   .school-cta-bl,
   .kids-cta-bl,
-  .exhibition-ad-tablet,
   .shop-wrap,
   .accessibility-wrap {
     display: none;
@@ -29,7 +28,6 @@
   .ftr-home .logo-ftr,
   .school-cta-wh,
   .kids-cta-wh,
-  .exhibition-ad-desktop,
   .robotics-wrap {
     display: block;
   }
@@ -242,7 +240,7 @@
     margin: 20px auto;
   }
 
-  .exhibition-ad-desktop section h3 {
+  .exhibitions-ad section h3 {
     margin: 40px 0 40px 0;
   }
 
@@ -306,7 +304,7 @@
     grid-column: 2 / 3;
   }
 
-  .exhibition-ad-desktop,
+  .exhibitions-ad,
   .prof-wrap,
   .exhib-container .energetica-wrap,
   .explore-5-wrap,
@@ -314,7 +312,7 @@
     grid-column: 3 / -1;
   }
 
-  .exhibition-ad-desktop {
+  .exhibitions-ad {
     grid-row: 1 / 2;
   }
 
@@ -349,6 +347,10 @@
 
   .explore-6-wrap > div {
     flex: 2;
+  }
+
+  .exhibitions-ad {
+    flex-direction: column;
   }
 
   .menu-desktop {
@@ -386,6 +388,7 @@
     max-width: 1100px;
   }
 
+  .exhibitions-ad img,
   .robotics-wrap img {
     border-radius: 15px 15px 0 0;
   }
