@@ -190,7 +190,7 @@
   .explore-container h1,
   .food-wrap,
   .admission-wrap,
-  .visit-container h1
+  .visit-container h1,
   .exhibitions-ad {
     grid-column: 1 / -1;
   }
