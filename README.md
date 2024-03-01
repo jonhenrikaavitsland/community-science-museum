@@ -19,7 +19,7 @@ The brief was to design and produce a website for a science museum opening in my
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone git@github.com:jonhenrikaavitsland/community-science-museum.git
 ```
 
 2. Install the dependencies:
